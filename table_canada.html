@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LC Overeas Education PVT. LTD</title>
+
+  <!-- --------------------------fixed social-link--------------------- -->
+  <style>
+    /* ul{
+    z-index: 999999;
+    position: fixed;
+  } */
+    .fsm {
+      position: fixed;
+      width: 70px;
+      margin-top: 150px;
+      transition: all 0.3s linear;
+      box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4);
+    }
+
+    .fsm li {
+      height: 60px;
+      position: relative;
+    }
+
+    .fsm li a {
+      /* color: black;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  padding-left:25%;
+  border-bottom: 1px solid rgba(0,0,0,.4);
+  transition: all .3s linear; */
+    }
+
+    .fsm li:nth-child(1) a {
+      background: #4267B2;
+    }
+
+    .fsm li:nth-child(2) a {
+      background: #1DA1F2;
+    }
+
+    .fsm li:nth-child(3) a {
+      background: #E1306C;
+    }
+
+    .fsm li:nth-child(4) a {
+      background: #2867B2;
+    }
+
+    .fsm li:nth-child(5) a {
+      background: #333;
+    }
+
+    .fsm li:nth-child(6) a {
+      background: #ff0000;
+    }
+
+    .fsm li a i {
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      font-size: 27px;
+    }
+
+    ul li a span {
+      display: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      z-index: 1;
+      /* width: 200px; */
+      border-bottom: 1px solid rgba(0, 0, 0, .5);
+      /* box-shadow: 0 0 1px 1px rgba(0,0,0,.3); */
+    }
+
+    ul li:hover a span {
+      padding-left: 30%;
+      display: block;
+    }
+  </style>
+
+  <!--
+    - custom css link
+  -->
+
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+  <link rel="stylesheet" href="./assets/css/pop.css">
+  <link rel="stylesheet" href="./assets/css/table_canada.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/news.css">
+  <link rel="stylesheet" href="./assets/css/enquirey.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <script src="https://kit.fontawesome.com/fafa56e3c9.js" crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body onload=set_time()>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!-- <link rel="import" href="location selector/location selector.html"> -->
+
+    <!--
+      - #HEADER
+    -->
+
+    <!-- ----------------pop-up screen------------------ -->
+    <div class="pop-up screen" id="regs">
+      <form action="https://formspree.io/f/mpzbyjnl" method="POST">
+        <!-- <i class='fa fa-close'></i> -->
+        <i class='fa fa-close' id="close-btn"></i>
+        <!-- <ion-icon class="cc" name="close-circle"></ion-icon> -->
+        <label for="">Full Name</label>
+        <input type="name" placeholder="enter your name">
+        <label for="">Email</label>
+        <input type="email" placeholder="enter your email">
+        <label for="">phone number</label>
+        <input type="phone" placeholder="enter your number">
+        <label for="">Select Countries you want to study</label>
+        <select id="country"></select>
+        <label for="">Select state in that country</label>
+        <select id="state"></select>
+        <label for="">Select Course you want to study</label>
+        <select id="district"></select>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </div>
+
+
+     <!-- ---------------header------------- -->
+     <header>
+      <div class="loc">
+        <div class="spic">
+          <ion-icon class="iloc" name="mail"></ion-icon>
+          <p><a href="mailto:info@safestudies-overseas.com">info@safestudies-overseas.com</a></p>
+        </div>
+        <div class="ssic">
+          <ion-icon name="call" class="iloc"></ion-icon>
+          <p><a href="tel:+91 9550106506"> +91 9550106506,</a></p>
+          <p><a href="tel:+91 9063682021">+91 9063682021</a></p>
+        </div>
+      </div>
+  
+      <nav class="navbar">
+  
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="Educator Logo">
+        </div>
+  
+        <ul class="navbar-nav">
+  
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">About Us</a>
+          </li>
+          <li class="nav-item" id="submenu">
+            <a href="index.html">Study Aborad</a>
+            <div class="mega_menu">
+              <div class="meg">
+                <a href="">
+                  <img src="./assets/images/Australia.png" alt="">
+                  <p>Study in Australia</p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="table_canada.html">
+                  <img src="./assets/images/Canada.png" alt="">
+                  <p>Study in Canada</p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="table_ireland.html">
+                  <img src="./assets/images/Ireland.jpg" alt="">
+                  <p>Study in Ireland</p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="table_uk.html">
+                  <img src="./assets/images/UK.png" alt="">
+                  <p>Study in UK</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" id="submenu">
+            <a href="services.html">Services</a>
+            <div class="mega_menu">
+              <div class="meg">
+                <a href="services.html">
+                  <img
+                    src="https://th.bing.com/th/id/R.ada645eb1de780c7dd118356f6960ae5?rik=VH%2bcLeDxUnuYuw&riu=http%3a%2f%2fabroadeducare.com%2fimages%2fservices%2fCountry-University-Course-Selection.jpg&ehk=hTbFaPZ9t1XeREbgixs4k3Vf%2fFTYDQpLeBTnRpTSDW4%3d&risl=&pid=ImgRaw&r=0"
+                    alt="">
+                  <p>Country & Course selection  </p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="services.html">
+                  <img src="https://th.bing.com/th/id/OIP.dK50xJj1OfuPOoqMdFMn3gHaE7?pid=ImgDet&rs=1" alt="">
+                  <p>Application & Admission </p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="services.html">
+                  <img src="https://suneducationgroup.com/wp-content/uploads/2016/09/5.jpg" alt="">
+                  <p>Visa Processing</p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="services.html">
+                  <img src="https://www.howellpipe.com/wp-content/uploads/2018/08/VAS-01.jpg" alt="">
+                  <p>Value-Added Services</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html">Contact Us</a>
+          </li>
+  
+        </ul>
+  
+        <button class="btn btn-primary">
+          <p class="btn-text">
+            <a href="#regs"><span style="color: white;">Register Now</span></a>
+          </p>
+          <span class="square"></span>
+        </button>
+  
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+  
+      </nav>
+  
+    </header>
+
+    <!-- --------------------submit form------------------------- -->
+    <div class="enquire">
+      <ion-icon class="cross" name="close"></ion-icon>
+      <h1>know your Query now</h1>
+      <p class="rem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel laudantium harum debitis fugiat
+        beatae architecto
+        quo itaque odio quis voluptatem.</p>
+      <form action="submit" class="fsum">
+        <div class="fleft">
+          <label for="">First Name</label>
+          <input class="input" type="name" placeholder="Enter Your First Name">
+        </div>
+        <div class="fleft1">
+          <label for="">Last Name</label>
+          <input type="name" class="input" placeholder="Enter Your Last Name">
+        </div>
+        <div class="fleft">
+          <label for="">Enter Your Contact</label>
+          <input type="number" class="input" placeholder="Enter Your Contact">
+        </div>
+        <div class="fleft">
+          <label for="">Email</label>
+          <input type="email" class="input" placeholder="Enter Your Email">
+        </div>
+        <div class="fleft">
+          <label for="">Nationality</label>
+          <select name="" id="">
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+          </select>
+        </div>
+        <div class="fleft">
+          <label for="">Type of Study</label>
+          <select name="" id="">
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+          </select>
+        </div>
+        <div class="fleft">
+          <label for="">Year of Study</label>
+          <select name="" id="">
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+          </select>
+        </div>
+        <div class="fleft">
+          <label for="">Intersted Course</label>
+          <select name="" id="">
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+          </select>
+        </div>
+        <input type="submit" value="submit" class="sum">
+      </form>
+    </div>
+
+
+    <!-- --------------------------fixed social media--------------- -->
+
+    <div class="fsm">
+      <ul>
+        <li><a href="www.facebook.com"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+        <li><a href="#"><i class="fab fa-github"></i><span>Github</span></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
+      </ul>
+    </div>
+
+
+
+    <main>
+
+
+
+      <!--
+        - #HOME SECTION
+      -->
+
+      <section class="home" id="home">
+
+        <div class="deco-shape shape-1">
+          <img src="./assets/images/shape-1.png" alt="art shape" width="70">
+        </div>
+        <div class="deco-shape shape-2">
+          <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+        </div>
+        <div class="deco-shape shape-3">
+          <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+        </div>
+        <div class="deco-shape shape-4">
+          <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+        </div>
+
+        <div class="home-left">
+
+          <p class="section-subtitle">Welcome To LC Overeas Education</p>
+
+          <h1 class="main-heading">
+            Get Education From Top
+            <span class="underline-img">Institutions <img src="./assets/images/banner-line.png" alt="line"></span>
+          </h1>
+
+          <p class="section-text">
+            BETTER EDUCATION FOR A BETTER WORLD
+          </p>
+
+          <div class="home-btn-group">
+            <button class="btn btn-primary">
+              <p class="btn-text">
+                <a href="services.html"><span style="color: white;">Explore Us</span></a>
+              </p>
+              <span class="square"></span>
+            </button>
+
+            <button class="btn btn-secondary">
+              <p class="btn-text">
+                <a href="contact.html"><span style="color: white;">Contact Us</span></a>
+              </p>
+              <span class="square"></span>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="home-right">
+
+          <div class="img-box">
+
+            <img src="./assets/images/banner-img-bg.png" alt="colorful background shape" class="background-shape">
+            <div id="main-img-banner">
+              <img src="./assets/images/banner-img.png" alt="banner image" class="banner-img" id="banner-img-main">
+            </div>
+            <div id="image-data">
+              <img src="./assets/images/testmo1.png" alt="" class="icon-1 smooth-zigzag-anim-1" width="250" id="testmo">
+
+            </div>
+
+            <img src="./assets/images/banner-aliment-icon-1.png" alt="" class="icon-2 smooth-zigzag-anim-2" width="240">
+            <img src="./assets/images/banner-aliment-icon-3.png" alt="" class="icon-3 smooth-zigzag-anim-3" width="195">
+            <img src="./assets/images/banner-aliment-icon-4.png" alt="" class="icon-4 drop-anim">
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="coucom">
+
+        <div>
+          <p>
+            International education is the first and foremost step, that will shape your career after the completion
+            of formal education in India. There are many countries all over the world, you can choose to, for the
+            purpose of education and Canada is one such country, which is quite popular all over.
+            <br>s
+            Canada is considered one of the best places for pursuing your higher studies. The country attracts
+            thousands of students from all over the world every year. The universities in Canada offer world-class
+            education, which is recognized globally. A degree from a recognized Canadian university is considered to
+            be of great value which is also equivalent to the degrees issued by Universities in US, Australia, and
+            other European Countries. The Government and also the Universities provide many benefits especially for
+            the students so that they can pursue their studies successfully. The high academic standards and quality
+            education levels helps the students to emerge as successful graduates from the universities in the
+            country.
+            <br>
+            Students, especially International students can enjoy access to valuable education at affordable fees,
+            when compared to students from other countries across the globe. Apart from low fees, the scholarship
+            opportunities reduce the burden while students will get the best possible education at minimal fees. The
+            education standards of most universities is considered to be on par with universities of US and
+            Europe.<br>
+          </p>
+        </div>
+        <div>
+          <img src="./assets/images/Canada.png" alt="course banner">
+        </div>
+      </section>
+
+      <!-- ------------- Table-Section -----------------  -->
+      <section class="course">
+
+
+        <div class="tabsection">
+          <p class="section-subtitle">Universities Of Canada</p>
+          <table>
+            <thead>
+              <tr id="thead">
+                <th>Institution_Name</th>
+                <th>Country_Name</th>
+                <th>Location</th>
+                <th>Website</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Institution_Name">Adler University,Vancouver</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Vancouver</td>
+                <td data-label="Website"> <a href="http://vancouver. adler.edu/">http://vancouver. adler.edu/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Alexander College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Vancouver & Burnby, BC</td>
+                <td data-label="Website"> <a href="www.alexanderco llege.ca">www.alexanderco llege.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Algonquin College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Ottawa</td>
+                <td data-label="Website"> <a href="www.algonquincol lege.com">www.algonquincol lege.com</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Bow Valley College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Calgary, Alberta</td>
+                <td data-label="Website"> <a href="www.bowvalleycollege.ca">www.bowvalleyco llege.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Brescia University College (Women's College in London)
+                </td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">London, Ontario</td>
+                <td data-label="Website"> <a href="http://brescia.uwo.ca/">http://brescia.uwo.ca/
+                  </a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Brighton College - Burnaby, BC
+                </td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Burnaby, BC</td>
+                <td data-label="Website"> <a href="https://brightoncollege.com/">https://brightoncollege.com/
+                  </a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">British Columbia Institute of Technology (BCIT)
+                </td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">British Columbia</td>
+                <td data-label="Website"> <a href="https://www.bcit.ca/">https://www.bcit.ca/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Brock University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">St.Catherines, ON
+                </td>
+                <td data-label="Website"> <a href="www.brocku.ca">www.brocku.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Cambrian - Hanson</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Toronto, ON Brampton, ON Vancouver,BC
+                </td>
+                <td data-label="Website"> <a href="www.canadahans on.com">www.canadahans on.com</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Cambrian College of Applied Arts & Technology</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Sudbury, ON</td>
+                <td data-label="Website"> <a href="www.cambriancollege.ca">www.cambriancollege.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Camosun College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Victoria, BC</td>
+                <td data-label="Website"> <a href="www.camosun.bc.ca">www.camosun.bc.ca
+                  </a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Canadian Tourism College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Vancouver and Surrey, BC
+                </td>
+                <td data-label="Website"> <a href="https://www.tourismcollege.com/">https://www.tourismcollege.com/</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Canadore College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">North Bay, ON West Parry Sound, Brampton</td>
+                <td data-label="Website"> <a href="www.canadorecollege.ca">www.canadorecollege.ca</a></td>
+              </tr>
+
+              <tr>
+                <td data-label="Institution_Name">Canadore@Toronto study at Stanford International College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Toronto</td>
+                <td data-label="Website"> <a
+                    href="http://www.canadorecollege.ca/stanford">http://www.canadorecollege.ca/stanford</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Centennial College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Toronto</td>
+                <td data-label="Website"> <a href="www.centennialcollege.ca">www.centennialcollege.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">College of New Caledonia</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">College of New Caledonia</td>
+                <td data-label="Website"> <a href="www.cnc.bc.ca">www.cnc.bc.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Columbia College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Vancouver</td>
+                <td data-label="Website"> <a href="www.columbiacollege.ca">www.columbiacollege.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Concordia University of Edmonton (Old Name Concordia University
+                  College of Alberta)</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Edmonton, Alberta</td>
+                <td data-label="Website"> <a href="www.concordia.ab.ca">www.concordia.ab.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Conestoga College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Kitchener, ON</td>
+                <td data-label="Website"> <a href="www.conestogac.on.ca">www.conestogac.on.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Confederation College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Thunderbay, ON</td>
+                <td data-label="Website"> <a href="www.confederationc.on.ca">www.confederationc.on.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Crandall University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Moncton, NB</td>
+                <td data-label="Website"> <a href="https://www.crandallu.ca/">https://www.crandallu.ca/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Dalhousie University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Dalhousie University</td>
+                <td data-label="Website"> <a href="www.dal.ca">www.dal.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Douglas College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">New Westminster & Coquitlam, BC</td>
+                <td data-label="Website"> <a href="www.douglas.bc.ca">www.douglas.bc.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Durham College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Oshawa, ON</td>
+                <td data-label="Website"> <a href="www.durhamcollege.ca">www.durhamcollege.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">EDUCO Canada - Acsenda School of Management
+                </td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Vancouve</td>
+                <td data-label="Website"> <a href="https://www.acsenda.com">https://www.acsenda.com</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">EDUCO Canada - University of Prince Edward Island
+                </td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Prince Edward Island
+                </td>
+                <td data-label="Website"> <a href="https://www.upei.ca/">https://www.upei.ca/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Fairleigh Dickinson University-Vancouver (FDU)</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Vancouver</td>
+                <td data-label="Website"> <a href="www.fdu.edu/vancouver">www.fdu.edu/vancouver</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Fleming College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Peterborough, Ontario</td>
+                <td data-label="Website"> <a href="www.flemingc.on.ca">www.flemingc.on.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">George Brown College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Toronto</td>
+                <td data-label="Website"> <a href="www.georgebrown.ca">www.georgebrown.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Georgian @ILAC, Toronto</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Toronto</td>
+                <td data-label="Website"> <a href="www.georgianc.on.ca">www.georgianc.on.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Georgian College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Barrie, ON</td>
+                <td data-label="Website"> <a href="www.georgianc.on.ca">www.georgianc.on.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Global University Systems (GUS) - Canadian College of Technology and
+                  Business (CCTB)
+                </td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Vancouver</td>
+                <td data-label="Website"> <a href="https://www.canadianctb.ca/">https://www.canadianctb.ca/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Humber College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Toronto, ON</td>
+                <td data-label="Website"> <a href="www.humber.ca">www.humber.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">ILLUME - MacEwan University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Edmonton, Alberta</td>
+                <td data-label="Website"> <a
+                    href="https://www.macewan.ca/wcm/index.htm">https://www.macewan.ca/wcm/index.htm</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">King's University College at the University of Western
+                  Ontario
+                </td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">London, Ontario</td>
+                <td data-label="Website"> <a href="www.kings.uwo.ca">www.kings.uwo.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Kwantlen Polytechnic University (KPU)</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Surrey, BC</td>
+                <td data-label="Website"> <a href="www.kwantlen.ca">www.kwantlen.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Lakehead University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Thunder Bay, ON & Orillia, ON</td>
+                <td data-label="Website"> <a href="www.lakeheadu.ca">www.lakeheadu.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Langara College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Vancouver, BC</td>
+                <td data-label="Website"> <a href="www.langara.bc.ca">www.langara.bc.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Laurentian University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Sudbury, ON</td>
+                <td data-label="Website"> <a href="https://laurentian.ca/">https://laurentian.ca/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Le Cordon Bleu</td>
+                <td data-label="Country_Name">Canada, UK, Australia, New Zealand, France, Japan, Mexico, Thailand
+                </td>
+                <td data-label="Location">Ottawa, London, Adelaide, Melbourne, Sydney, Wellington, Paris, Tokyo, Kobe,
+                  Mexico City,
+                  Bangkok
+                </td>
+                <td data-label="Website"> <a href="www.cordonbleu.edu">www.cordonbleu.edu</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Loyalist College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Belleville, ON</td>
+                <td data-label="Website"> <a href="www.loyalistcollege.com">www.loyalistcollege.com</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Loyalist College </td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Toronto</td>
+                <td data-label="Website"> <a
+                    href="https://www.loyalistcollege.com/international/welcome-to-loyalist-college-in-toronto/programs">https://www.loyalistcollege.com/international/welcome-to-loyalist-college-in-toronto/programs</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Acadia University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Wolfville, Nova Scotia</td>
+                <td data-label="Website"> <a href="www.acadiau.ca">www.acadiau.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Canadian College, Vancouver
+                </td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Vancouve</td>
+                <td data-label="Website"> <a href="http://canadiancollege.com/">http://canadiancollege.com/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Cape Breton University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Sydney, NS</td>
+                <td data-label="Website"> <a href="www.cbu.ca">www.cbu.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Capilano University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Vancouver</td>
+                <td data-label="Website"> <a href="www.capilanou.ca">www.capilanou.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Coast Mountain College (Old Name Northwest Community
+                  College),
+                  British Columbia
+                </td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Terrace, BC</td>
+                <td data-label="Website"> <a href="http://www.nwcc.bc.ca/">http://www.nwcc.bc.ca/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - College of the Rockies (COTR)</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Cranbrook, BC</td>
+                <td data-label="Website"> <a href="www.cotr.bc.ca">www.cotr.bc.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Cumberland College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Saskatchewan</td>
+                <td data-label="Website"> <a href="https://www.cumb erlandcollege.sk.ca">https://www.cumb
+                    erlandcollege.sk.ca
+                  </a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Great Plains College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Saskatchewan</td>
+                <td data-label="Website"> <a
+                    href="https://www.greatplainscollege.ca">https://www.greatplainscollege.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Lakeland College</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Alberta</td>
+                <td data-label="Website"> <a href="http://www.lakelandcollege.ca/">http://www.lakelandcollege.ca/</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Mount Allison University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Sackville, New Brunswick</td>
+                <td data-label="Website"> <a href="www.mta.ca">www.mta.ca</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Mount Saint Vincent University</td>
+                <td data-label="Country_Name">Canada</td>
+                <td data-label="Location">Halifax, Nova Scotia</td>
+                <td data-label="Website"> <a href="www.msvu.ca">www.msvu.ca</a></td>
+              </tr>
+              <var>
+                <tr>
+                  <td data-label="Institution_Name">M Square - Multihexa College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Chicoutimi, Quebec</td>
+                  <td data-label="Website"> <a
+                      href="https://www.collegemultihexa.ca/international/">https://www.collegemultihexa.ca/international/</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">M Square - Nipissing University</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">North Bay, ON</td>
+                  <td data-label="Website"> <a href="https://www.nipissingu.ca/">https://www.nipissingu.ca/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">M Square - Northern Lights College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Fort St.John, BC</td>
+                  <td data-label="Website"> <a href="www.nlc.bc.ca">www.nlc.bc.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">M Square - Parkland College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Melville, Saskatchewan
+                  </td>
+                  <td data-label="Website"> <a href="www.parklandcollege.sk.ca">www.parklandcollege.sk.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">M Square - Q College - Victoria, BC
+                  </td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Victoria, BC</td>
+                  <td data-label="Website"> <a href="https://qcollege.com/">https://qcollege.com/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">M Square - Selkirk College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Castlegar, BC</td>
+                  <td data-label="Website"> <a href="www.selkirk.ca">www.selkirk.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">M Square - St. Mary's University, Calgary
+                  </td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Calgary</td>
+                  <td data-label="Website"> <a href="https://www.stmu.ca/">https://www.stmu.ca/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">M Square - University of Northern British Columbia (UNBC)</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Prince George, BC</td>
+                  <td data-label="Website"> <a href="www.unbc.ca">www.unbc.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">M Square - Vancouver Community College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Vancouve</td>
+                  <td data-label="Website"> <a href="www.vcc.ca">www.vcc.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Manitoba Institute of Trades and Technology (MITT)</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Winnipeg, Manitoba</td>
+                  <td data-label="Website"> <a href="http://mitt.ca/">http://mitt.ca/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Maple Leaf Schools</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">North America</td>
+                  <td data-label="Website"> <a
+                      href="http://www.mapleleafschools.com/north-america/schools/our-schools">http://www.mapleleafschools.com/north-america/schools/our-schools</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Medicine Hat College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Alberta</td>
+                  <td data-label="Website"> <a href="www.mhc.ab.ca">www.mhc.ab.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Memorial University of Newfoundland, Grenfell Campus</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Grenfell</td>
+                  <td data-label="Website"> <a
+                      href="https://www.grenfell.mun.ca/Pages/home.aspxa">https://www.grenfell.mun.ca/Pages/home.aspxa</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Mohawk @Mississauga</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Mississauga</td>
+                  <td data-label="Website"> <a href="https://www.mohawkcollege.ca">https://www.mohawkcollege.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Mohawk College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Hamilton, ON</td>
+                  <td data-label="Website"> <a href="https://www.mohawkcollege.ca">https://www.mohawkcollege.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Mount Royal University - Calgary, Alberta</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Calgary, Alberta</td>
+                  <td data-label="Website"> <a
+                      href="https://www.mtroyal.ca/InternationalStudents/">https://www.mtroyal.ca/InternationalStudents/</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Navitas Canada - FIC - Simon Fraser University</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Burnaby, BC</td>
+                  <td data-label="Website"> <a href="www.fraseric.ca">www.fraseric.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Navitas Canada - ICM - University of Manitoba
+                  </td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Winnipeg, Manitoba</td>
+                  <td data-label="Website"> <a href="www.icmanitoba.ca">www.icmanitoba.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">New York Institute of Technology (NYIT) - Vancouver</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Vancouver, BC</td>
+                  <td data-label="Website"> <a href="www.nyit.edu/canada">www.nyit.edu/canada</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Niagara College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Niagara</td>
+                  <td data-label="Website"> <a href="www.niagaracollege.ca">www.niagaracollege.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Norquest College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Edmonton, Alberta</td>
+                  <td data-label="Website"> <a href="www.Norquest.ca">www.Norquest.ca</a></td>
+                </tr>
+
+                <tr>
+                  <td data-label="Institution_Name">North Island College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Courtenay</td>
+                  <td data-label="Website"> <a href="www.nic.bc.ca/ie">www.nic.bc.ca/ie</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Northeastern University (Toronto & Vancouver)</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Toronto & Vancouver</td>
+                  <td data-label="Website"> <a
+                      href="https://www.northeastern.edu/toronto/the-toronto-campus/&https://www.northeastern.edu/vancouver/">https://www.northeastern.edu/toronto/the-toronto-campus/&https://www.northeastern.edu/vancouver/</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Northern College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Timmins, Ontario
+                  </td>
+                  <td data-label="Website"> <a href="www.Northernc.on.ca">www.Northernc.on.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Okanagan College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Kelowna, BC</td>
+                  <td data-label="Website"> <a href="www.okanagan.bc.ca">www.okanagan.bc.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Olds College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Alberta</td>
+                  <td data-label="Website"> <a href="https://www.oldscollege.ca/">https://www.oldscollege.ca/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Omni College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Calgary, Alberta</td>
+                  <td data-label="Website"> <a href="www.bowvalleyco llege.ca">www.bowvalleyco llege.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Ontario Tech University
+                  </td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Ontario</td>
+                  <td data-label="Website"> <a href="https://ontariotechu.ca/">https://ontariotechu.ca/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Pures College of Technology (Northern College at Pures - Toronto)
+                  </td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Toronto</td>
+                  <td data-label="Website"> <a
+                      href="http://www.northernc.on.ca/pures/">http://www.northernc.on.ca/pures/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Red River College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Winnipeg, Manitoba</td>
+                  <td data-label="Website"> <a href="www.rrc.mb.ca">www.rrc.mb.ca</a></td>
+                </tr>
+
+                <tr>
+                  <td data-label="Institution_Name">Royal Roads University</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Victoria, BC</td>
+                  <td data-label="Website"> <a href="www.royalroads.ca">www.royalroads.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Saskatchewan Polytechnic (Formerly SIAST)</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Saskatoon, Saskatchewan</td>
+                  <td data-label="Website"> <a href="https://saskpolytech.ca/">https://saskpolytech.ca/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Sault College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Sault Ste. Marie, ON</td>
+                  <td data-label="Website"> <a href="www.saultcollege.ca">www.saultcollege.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Seneca College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Toronto</td>
+                  <td data-label="Website"> <a href="www.seneca.on.ca">www.seneca.on.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Sheridan College Institute of Technology & Advanced Learning</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Toronto, ON</td>
+                  <td data-label="Website"> <a href="www.sheridancollege.ca">www.sheridancollege.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Southern Alberta Institute of Technology (SAIT)
+                  </td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Calgary, Alberta</td>
+                  <td data-label="Website"> <a href="https://www.sait.ca/">https://www.sait.ca/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">St. Clair College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">South Campus, Riverside Drive West, Windsor, Thames, ChathamKent
+                  </td>
+                  <td data-label="Website"> <a href="http://www.stclaircollege.ca/">http://www.stclaircollege.ca/</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">St. Clair College @ Acumen</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Toronto & Mississauga</td>
+                  <td data-label="Website"> <a
+                      href="http://www.stclaircollege.ca/acumencampus/">http://www.stclaircollege.ca/acumencampus/</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">St. Francis Xavier University</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Antigonish, Nova Scotia</td>
+                  <td data-label="Website"> <a href="www.stfx.ca">www.stfx.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">St. Lawrence College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Kingston, Cornwall & Brockville (All in Ontario)</td>
+                  <td data-label="Website"> <a href="www.stlawrencecollege.ca">www.stlawrencecollege.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">St. Thomas University, New Brunswick</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">New Brunswick</td>
+                  <td data-label="Website"> <a href="https://www.stu.ca/academics">https://www.stu.ca/academics</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Stanford International College of Business and Technology</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Brampton, Mississauga, Scarborough, Toronto</td>
+                  <td data-label="Website"> <a href="https://www.scbt.ca/">https://www.scbt.ca/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Stenberg College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Surrey, BC</td>
+                  <td data-label="Website"> <a
+                      href="https://www.stenbergcollege.com/">https://www.stenbergcollege.com/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Tamwood Careers</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">British Columbia</td>
+                  <td data-label="Website"> <a href="https://tamwood.com/">https://tamwood.com/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">The University of Winnipeg</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Winnipeg, Manitoba</td>
+                  <td data-label="Website"> <a href="www.uwinnipeg.ca">www.uwinnipeg.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Thompson Rivers University</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Kamloops, BC</td>
+                  <td data-label="Website"> <a href="www.tru.ca">www.tru.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Trent University</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Peterborough, Ontario</td>
+                  <td data-label="Website"> <a href="www.trentu.ca/tip">www.trentu.ca/tip</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Lethbridge</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Lethbridge, Alberta</td>
+                  <td data-label="Website"> <a href="www.uleth.ca">www.uleth.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Manitoba</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Fredericton And Saint John, New
+                    Brunswick
+                  </td>
+                  <td data-label="Website"> <a href="http://www.unb.ca">http://www.unb.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Regina</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Regina, Saskatchewan
+                  </td>
+                  <td data-label="Website"> <a href="www.uregina.ca">www.uregina.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Saskatchewan</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Saskatoon, Saskatchewan</td>
+                  <td data-label="Website"> <a href="www.usask.ca">www.usask.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of the Fraser Valley</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Abbotsford, BC</td>
+                  <td data-label="Website"> <a href="www.ufv.ca">www.ufv.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Victoria</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Victoria, BC</td>
+                  <td data-label="Website"> <a href="www.uvic.ca">www.uvic.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Waterloo</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Waterloo, ON</td>
+                  <td data-label="Website"> <a href="www.uwaterloo.ca">www.uwaterloo.ca</a></td>
+                </tr>
+
+                <tr>
+                  <td data-label="Institution_Name">University of Windsor</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Windsor, ON</td>
+                  <td data-label="Website"> <a href="www.uwindsor.ca">www.uwindsor.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Vancouver Film School</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Vancouver, BC</td>
+                  <td data-label="Website"> <a href="www.vfs.edu">www.vfs.edu</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Vancouver Island University (VIU)</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Nanaimo</td>
+                  <td data-label="Website"> <a href="www.viu.ca">www.viu.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Vanier College</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Montreal</td>
+                  <td data-label="Website"> <a
+                      href="https://www.vaniercollege.qc.ca">https://www.vaniercollege.qc.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Wilfrid Laurier University</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Waterloo, ON</td>
+                  <td data-label="Website"> <a href="www.wlu.ca">www.wlu.ca</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Yukon University</td>
+                  <td data-label="Country_Name">Canada</td>
+                  <td data-label="Location">Whitehorse,Yukon
+                  </td>
+                  <td data-label="Website"> <a href="https://www.yukonu.ca/">https://www.yukonu.ca/</a></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+  </div>
+</body>
+
+</main>
+
+
+
+
+
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div class="grid-item">
+
+      <div class="footer-logo">
+        <img src="./assets/images/logo.png" alt="educator logo white">
+      </div>
+
+      <p class="footer-text">
+        Our range of value-added services include assistance for Education Loan, Financial Aid, Pre-Departure
+        Briefing, Forex, Travel and Accommodation Assistance.
+      </p>
+
+      <div class="social-link">
+        <a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+
+    </div>
+
+    <ul class="grid-item">
+
+      <h4 class="item-heading">Our Link</h4>
+
+      <li class="list-item">
+        <a href="index.html">Home</a>
+      </li>
+
+      <li class="list-item">
+        <a href="index.html">About Us</a>
+      </li>
+
+      <li class="list-item">
+        <a href="index.html">Study Abroad</a>
+      </li>
+
+      <li class="list-item">
+        <a href="index.html">Services</a>
+      </li>
+
+      <li class="list-item">
+        <a href="contact.html">Contact Us</a>
+      </li>
+
+    </ul>
+
+    <ul class="grid-item">
+
+      <h4 class="item-heading">Other Link</h4>
+
+      <li class="list-item">
+        <a href="index.html">Team</a>
+      </li>
+
+      <li class="list-item">
+        <a href="index.html">FAQ</a>
+      </li>
+
+      <li class="list-item">
+        <a href="services.html">Services</a>
+      </li>
+
+      <li class="list-item">
+        <a href="#">Privacy Policy</a>
+      </li>
+
+      <li class="list-item">
+        <a href="#">Term & Condition</a>
+      </li>
+
+    </ul>
+    <div class="grid-item">
+
+      <h4 class="item-heading">Contact Us</h4>
+
+      <div class="wrapper">
+
+        <p class="footer-text">
+          Gurukrupa Complex, Opp. Electrical SubStation, Near Upal Ring Road, Uppal, Hyderabad, Telangana 500039,
+          India
+          Call : +91 9063682021, +91 9550106506
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+  <p class="copyright">
+    Copyright © 2022 <a href="#">Overseas Education PVT. LTD</a>. All rights reserved.
+  </p>
+
+</footer>
+
+</div>
+<!-- ----------------------------changed testimonials------------------------ -->
+<script>
+  var start = 1;
+  function set_time() {
+    // this method will apply time interval for 2.5 second
+    setInterval(image_show, 2500);
+  }
+
+  function image_show() {
+    var image_data =  "./assets/images/testmo5.png" ;
+      var img_data = "./assets/images/head7.png";
+
+      if (start == 1) {
+        image_data = "./assets/images/testmo1.png";
+      }
+      else if (start == 2) {
+        image_data = "./assets/images/testmo2.png";
+      }
+      else if (start == 3) {
+        image_data = "./assets/images/testmo3.png";
+      }
+      else if (start == 4) {
+        image_data = "./assets/images/testmo4.png";
+      }
+      else {
+        start = 1;
+      }
+
+      if (start == 1) {
+        img_data = "./assets/images/head9.png";
+      }
+      else if (start == 2) {
+        img_data = "./assets/images/head3.png";
+      }
+      else if (start == 3) {
+        img_data = "./assets/images/banner-img.png";
+      }
+      else if (start == 4) {
+        img_data = "./assets/images/head8.png";
+      }
+      else if (start == 5) {
+        img_data = "./assets/images/head1.png";
+      }
+      else {
+        start = 1;
+      }
+
+      document.getElementById("testmo").src = "" + image_data;
+      document.getElementById("banner-img-main").src = "" + img_data;
+      start++;
+
+  }
+</script>
+
+
+
+
+<!--
+  - custom js link
+-->
+<script src="./assets/js/script.js"></script>
+<script src="./location selector/countries.json"></script>
+<script src="./location selector/custom.js"></script>
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+</body>
+
+<!-- <script src="./assets/js/pop.js"></script> -->
+
+</html>

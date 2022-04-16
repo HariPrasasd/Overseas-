@@ -1,0 +1,19 @@
+.coucom{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:1050px){
+    .coucom{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px){
+    .coucom img{
+        width: 80vw;
+        height: auto;
+    }
+}

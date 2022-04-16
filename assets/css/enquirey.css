@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    /* padding: 40px; */
+    
+}
+h1{
+    text-align: center;
+    color: orange;
+    margin-top: 0px;
+}
+.rem{
+    /* position: relative; */
+    text-align: center;
+    align-items: center;
+    color: orange;
+    /* width: 50%; */
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+.fsum{
+    margin-top: 30px;
+    display: grid;
+    max-width: 700px;
+    margin: 50px 0px 0px 300px;
+    border-radius: 10px;
+    grid-template-columns: repeat(2,1fr);
+    /* background: blueviolet; */
+    box-shadow: 0 5px 25px white;
+    padding: 20px;
+
+}
+.fleft input,
+.fleft select,
+.fleft1 input,
+.fleft1 select{
+    width: 100%;
+    justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+  /* left: 50px; */
+  margin: 10px 0px  ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.fleft1,.fleft{
+    margin-right: 5%;
+}
+.input{
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.cross{
+    position: relative;
+    font-size: 2rem;
+    top: 45px;
+    color: aqua;
+    left: 90%;
+    cursor: pointer;
+}
+
+.enquire{
+    display: none;
+    position: fixed;
+    background: hsla(0, 0%, 100%, 0.9);;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+}
+.enquire.revel{
+    display: block;
+}
+
+.fsum .sum{
+   position: relative;
+   left: 50%;
+   cursor: pointer;
+   top: 10px;
+   text-transform: uppercase;
+}
+
+.fsum .sum:hover{
+    background: orange;
+}

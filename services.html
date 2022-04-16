@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LC Overeas Education PVT. LTD</title>
+
+  <!-- --------------------------fixed social-link--------------------- -->
+<style>
+  /* ul{
+    z-index: 999999;
+    position: fixed;
+  } */
+  .fsm{
+  position: fixed;
+  width: 70px;
+  margin-top: 150px;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
+}
+.fsm li{
+  height: 60px;
+  position:relative;
+}
+.fsm li a{
+  /* color: black;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  padding-left:25%;
+  border-bottom: 1px solid rgba(0,0,0,.4);
+  transition: all .3s linear; */
+}
+.fsm li:nth-child(1) a{
+  background: #4267B2;
+}
+.fsm li:nth-child(2) a{
+  background: #1DA1F2;
+}
+.fsm li:nth-child(3) a{
+  background: #E1306C;
+}
+.fsm li:nth-child(4) a{
+  background: #2867B2;
+}
+.fsm li:nth-child(5) a{
+  background: #333;
+}
+.fsm li:nth-child(6) a{
+  background: #ff0000;
+}
+.fsm li a i{
+  position:absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 27px;
+}
+ul li a span{
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+a:hover {
+  z-index:1;
+  /* width: 200px; */
+  border-bottom: 1px solid rgba(0,0,0,.5);
+  /* box-shadow: 0 0 1px 1px rgba(0,0,0,.3); */
+}
+ul li:hover a span{
+  padding-left: 30%;
+  display: block;
+}
+</style>
+
+<style>
+  .sec {
+    padding: 30px;
+    line-height: 0.4in;
+  }
+</style>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+  <link rel="stylesheet" href="./assets/css/pop.css">
+  <link rel="stylesheet" href="./assets/css/news.css">
+  <link rel="stylesheet" href="./assets/css/enquirey.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <script src="https://kit.fontawesome.com/fafa56e3c9.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="./assets/css/service.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body onload=set_time()>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!-- <link rel="import" href="location selector/location selector.html"> -->
+
+    <!--
+      - #HEADER
+    -->
+
+    <!-- ----------------pop-up screen------------------ -->
+    <div class="pop-up screen" id="regs">
+      <form action="https://formspree.io/f/mpzbyjnl" method="POST">
+        <!-- <i class='fa fa-close'></i> -->
+        <i class='fa fa-close' id="close-btn"></i>
+        <!-- <ion-icon class="cc" name="close-circle"></ion-icon> -->
+        <label for="">Full Name</label>
+        <input type="name" placeholder="enter your name">
+        <label for="">Email</label>
+        <input type="email" placeholder="enter your email">
+        <label for="">phone number</label>
+        <input type="phone" placeholder="enter your number">
+        <label for="">Select Countries you want to study</label>
+        <select id="country"></select>
+        <label for="">Select state in that country</label>
+        <select id="state"></select>
+        <label for="">Select Course you want to study</label>
+        <select id="district"></select>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </div>
+
+
+    <!-- ---------------header------------- -->
+  <header>
+    <div class="loc">
+      <div class="spic">
+        <ion-icon class="iloc" name="mail"></ion-icon>
+        <p><a href="mailto:info@safestudies-overseas.com">info@safestudies-overseas.com</a></p>
+      </div>
+      <div class="ssic">
+        <ion-icon name="call" class="iloc"></ion-icon>
+        <p><a href="tel:+91 9550106506"> +91 9550106506,</a></p>
+        <p><a href="tel:+91 9063682021">+91 9063682021</a></p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+
+      <div class="navbar-brand">
+        <img src="./assets/images/logo.png" alt="Educator Logo">
+      </div>
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html">About Us</a>
+        </li>
+        <li class="nav-item" id="submenu">
+          <a href="index.html">Study Aborad</a>
+          <div class="mega_menu">
+            <div class="meg">
+              <a href="">
+                <img src="./assets/images/Australia.png" alt="">
+                <p>Study in Australia</p>
+              </a>
+            </div>
+            <div class="meg">
+              <a href="table_canada.html">
+                <img src="./assets/images/Canada.png" alt="">
+                <p>Study in Canada</p>
+              </a>
+            </div>
+            <div class="meg">
+              <a href="table_ireland.html">
+                <img src="./assets/images/Ireland.jpg" alt="">
+                <p>Study in Ireland</p>
+              </a>
+            </div>
+            <div class="meg">
+              <a href="table_uk.html">
+                <img src="./assets/images/UK.png" alt="">
+                <p>Study in UK</p>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item" id="submenu">
+          <a href="services.html">Services</a>
+          <div class="mega_menu">
+            <div class="meg">
+              <a href="services.html">
+                <img
+                  src="https://th.bing.com/th/id/R.ada645eb1de780c7dd118356f6960ae5?rik=VH%2bcLeDxUnuYuw&riu=http%3a%2f%2fabroadeducare.com%2fimages%2fservices%2fCountry-University-Course-Selection.jpg&ehk=hTbFaPZ9t1XeREbgixs4k3Vf%2fFTYDQpLeBTnRpTSDW4%3d&risl=&pid=ImgRaw&r=0"
+                  alt="">
+                <p>Country & Course selection  </p>
+              </a>
+            </div>
+            <div class="meg">
+              <a href="services.html">
+                <img src="https://th.bing.com/th/id/OIP.dK50xJj1OfuPOoqMdFMn3gHaE7?pid=ImgDet&rs=1" alt="">
+                <p>Application & Admission </p>
+              </a>
+            </div>
+            <div class="meg">
+              <a href="services.html">
+                <img src="https://suneducationgroup.com/wp-content/uploads/2016/09/5.jpg" alt="">
+                <p>Visa Processing</p>
+              </a>
+            </div>
+            <div class="meg">
+              <a href="services.html">
+                <img src="https://www.howellpipe.com/wp-content/uploads/2018/08/VAS-01.jpg" alt="">
+                <p>Value-Added Services</p>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html">Contact Us</a>
+        </li>
+
+      </ul>
+
+      <button class="btn btn-primary">
+        <p class="btn-text">
+          <a href="#regs"><span style="color: white;">Register Now</span></a>
+        </p>
+        <span class="square"></span>
+      </button>
+
+      <button class="nav-toggle-btn">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+    </nav>
+
+  </header>
+
+  <!-- --------------------submit form------------------------- -->
+  <div class="enquire">
+    <ion-icon class="cross" name="close"></ion-icon>
+    <h1>know your Query now</h1>
+    <p class="rem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel laudantium harum debitis fugiat
+      beatae architecto
+      quo itaque odio quis voluptatem.</p>
+    <form action="submit" class="fsum">
+      <div class="fleft">
+        <label for="">First Name</label>
+        <input class="input" type="name" placeholder="Enter Your First Name">
+      </div>
+      <div class="fleft1">
+        <label for="">Last Name</label>
+        <input type="name" class="input" placeholder="Enter Your Last Name">
+      </div>
+      <div class="fleft">
+        <label for="">Enter Your Contact</label>
+        <input type="number" class="input" placeholder="Enter Your Contact">
+      </div>
+      <div class="fleft">
+        <label for="">Email</label>
+        <input type="email" class="input" placeholder="Enter Your Email">
+      </div>
+      <div class="fleft">
+        <label for="">Nationality</label>
+        <select name="" id="">
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+        </select>
+      </div>
+      <div class="fleft">
+        <label for="">Type of Study</label>
+        <select name="" id="">
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+        </select>
+      </div>
+      <div class="fleft">
+        <label for="">Year of Study</label>
+        <select name="" id="">
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+        </select>
+      </div>
+      <div class="fleft">
+        <label for="">Intersted Course</label>
+        <select name="" id="">
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+          <option value="required">Indian</option>
+        </select>
+      </div>
+      <input type="submit" value="submit" class="sum">
+    </form>
+  </div>
+
+    
+ <!-- --------------------------fixed social media--------------- -->
+
+ <div class="fsm">
+  <ul>
+    <li><a href="www.facebook.com"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+    <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+    <li><a href="#"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+    <li><a href="#"><i class="fab fa-github"></i><span>Github</span></a></li>
+    <li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
+  </ul>
+</div>
+
+
+
+    <main>
+
+     
+
+      <!--
+        - #HOME SECTION
+      -->
+
+      <section class="home" id="home">
+
+        <div class="deco-shape shape-1">
+          <img src="./assets/images/shape-1.png" alt="art shape" width="70">
+        </div>
+        <div class="deco-shape shape-2">
+          <img src="./assets/images/shape-2.png" alt="art shape" width="55">
+        </div>
+        <div class="deco-shape shape-3">
+          <img src="./assets/images/shape-3.png" alt="art shape" width="120">
+        </div>
+        <div class="deco-shape shape-4">
+          <img src="./assets/images/shape-4.png" alt="art shape" width="30">
+        </div>
+
+        <div class="home-left">
+
+          <p class="section-subtitle">Welcome To LC Overeas Education</p>
+
+          <h1 class="main-heading">
+            Get Education From Top
+            <span class="underline-img">Institutions <img src="./assets/images/banner-line.png" alt="line"></span>
+          </h1>
+
+          <p class="section-text">
+            BETTER EDUCATION FOR A BETTER WORLD
+          </p>
+
+          <div class="home-btn-group">
+            <button class="btn btn-primary">
+              <p class="btn-text">
+                <a href="services.html"><span style="color: white;">Explore Us</span></a>
+              </p>
+              <span class="square"></span>
+            </button>
+
+            <button class="btn btn-secondary">
+              <p class="btn-text">
+                <a href="contact.html"><span style="color: white;">Contact Us</span></a>
+              </p>
+              <span class="square"></span>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="home-right">
+
+          <div class="img-box">
+
+            <img src="./assets/images/banner-img-bg.png" alt="colorful background shape"
+                class="background-shape">
+                <div id="main-img-banner">
+                  <img src="./assets/images/banner-img.png" alt="banner image" class="banner-img" id="banner-img-main">
+                </div>
+            <div id="image-data">
+              <img src="./assets/images/testmo1.png" alt="" class="icon-1 smooth-zigzag-anim-1"
+              width="250" id="testmo">
+              
+            </div>
+
+            <img src="./assets/images/banner-aliment-icon-1.png" alt="" class="icon-2 smooth-zigzag-anim-2" width="240">
+            <img src="./assets/images/banner-aliment-icon-3.png" alt="" class="icon-3 smooth-zigzag-anim-3"
+                width="195">
+            <img src="./assets/images/banner-aliment-icon-4.png" alt="" class="icon-4 drop-anim">
+
+        </div>
+
+        </div>
+
+      </section>
+
+
+
+
+    <section class="services" id="services">
+
+      <div class="container-service">
+
+        <div class="card">
+          <div class="imgBx">
+            <img src="https://leverageedu.com/blog/wp-content/uploads/2019/11/Overseas-Education-Consultants.jpg"
+              alt="">
+          </div>
+          <div class="content">
+            <h2>Overseas Education Counselling</h2>
+            <p>
+              If you are the one looking forward to taking a crucial decision to go and study abroad and are looking for
+              someone who can perfectly assist you while helping you in finding the perfect answer to your question?
+              Then we are here for you, to help you in finding the best solutions for your questions as we do not
+              restrict any of our counseling sessions.
+              Our advisors help you by assisting and helping you in shortlisting the options that are relevant to your
+              profile. They also help you by suggesting different programs that match your preferences. You can find a
+              perfect mentor for yourself; all you have to do is get in touch with us.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgBx">
+            <img
+              src="https://louisiana.edu/sites/louisiana/files/styles/large/public/news-images/2020-01/pres-deans-list-fa19.png?itok=5dr-I3ND"
+              alt="">
+          </div>
+          <div class="content">
+            <h2>Test Preparation</h2>
+            <p>
+              We offer you different services which include training for SAT, GRE, and GMAT, and also, we prepare you
+              thoroughly for different English Proficiency tests such as TOEFL (iBT0, IELTS, and PTE. Our team provides
+              you with different comprehensive and result-oriented coaching that aims at your personalization,
+              attention, and flexibility of timings.<br>
+              We do special research for different mock tests, materials, and phenomenal books that make your experience
+              with us more valuable and your experience becomes more pleasurable. You can also attend demo classes to
+              get an experience of our coaching which can help you in making up your mind to register yourself with us
+              for our upcoming batches.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgBx">
+            <img
+              src="https://th.bing.com/th/id/R.ada645eb1de780c7dd118356f6960ae5?rik=VH%2bcLeDxUnuYuw&riu=http%3a%2f%2fabroadeducare.com%2fimages%2fservices%2fCountry-University-Course-Selection.jpg&ehk=hTbFaPZ9t1XeREbgixs4k3Vf%2fFTYDQpLeBTnRpTSDW4%3d&risl=&pid=ImgRaw&r=0"
+              alt="">
+          </div>
+          <div class="content">
+            <h2>Country, Course & University Selection</h2>
+            <p>
+              Deciding to move into another country and finding it difficult to choose which country you should go to,
+              let us get you through this problem. The team of our skilled counselors helps you in the process of
+              shortlisting the countries and universities that best suits your career goals as well as budget
+              preferences.<br>
+              We have our relevance with many different universities across the globe that provides you with different
+              options. Our team also guides you in securing your admission to universities offering different
+              scholarships and paid internships programs while you study abroad.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgBx">
+            <img src="https://th.bing.com/th/id/OIP.dK50xJj1OfuPOoqMdFMn3gHaE7?pid=ImgDet&rs=1" alt="">
+          </div>
+          <div class="content">
+            <h2>Application & Admission Assistance</h2>
+            <p>
+              To get admission to any university, your application is the main factor. Your applications functions as
+              your introduction to any university’s admission committee. Our admission advisors often assist you in
+              filling the form in such a way that it looks more presentable and helps you to fill the form with
+              precision.<br>
+              We also take care of the guidelines while helping you in drafting an effective SOP (Statement of Purpose),
+              Resume, Essays, and many more things that help in reflecting your personal. <br>
+              You can take a lead on preparing your application to post it to the universities.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgBx">
+            <img src="https://suneducationgroup.com/wp-content/uploads/2016/09/5.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>Visa Processing</h2>
+            <p>
+              After completing all the processes of screening from sending your application to universities to getting
+              admission in your desired course comes the process of Visa. Different countries have different
+              requirements for visas.<br>
+              Therefore, we help you in filing the form up to the length of your Visa application and take care of
+              getting your documents ready, to ensure the precision and submission of your application are on time.
+              Along with preparing your visa we also conduct different mock interviews for your visa, so that you can
+              gain confidence for the big day. We have a high success rate for Visa which makes us a great choice.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgBx">
+            <img src="https://www.howellpipe.com/wp-content/uploads/2018/08/VAS-01.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>Value-Added Services</h2>
+            <p>
+              We also provide some value-added services such as assisting in getting an education loan, financial aid,
+              travel & accommodation, and many more. Along with our assistance, we also take care that after you reach
+              your destination, you feel free and stay at ease.<br>
+              To get a preview of the lifestyle at your destination, you can also get our alumni network. This network
+              helps you in understanding the lifestyle and culture of your destination and helps you in getting along
+              with the changes easily.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    </main>
+
+
+
+    <footer>
+
+      <div class="footer-grid">
+  
+        <div class="grid-item">
+  
+          <div class="footer-logo">
+            <img src="./assets/images/logo.png" alt="educator logo white">
+          </div>
+  
+          <p class="footer-text">
+            Our range of value-added services include assistance for Education Loan, Financial Aid, Pre-Departure
+            Briefing, Forex, Travel and Accommodation Assistance.
+          </p>
+  
+          <div class="social-link">
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </div>
+  
+        </div>
+  
+        <ul class="grid-item">
+  
+          <h4 class="item-heading">Our Link</h4>
+  
+          <li class="list-item">
+            <a href="index.html">Home</a>
+          </li>
+  
+          <li class="list-item">
+            <a href="index.html">About Us</a>
+          </li>
+  
+          <li class="list-item">
+            <a href="index.html">Study Abroad</a>
+          </li>
+  
+          <li class="list-item">
+            <a href="index.html">Services</a>
+          </li>
+  
+          <li class="list-item">
+            <a href="contact.html">Contact Us</a>
+          </li>
+  
+        </ul>
+  
+        <ul class="grid-item">
+  
+          <h4 class="item-heading">Other Link</h4>
+  
+          <li class="list-item">
+            <a href="index.html">Team</a>
+          </li>
+  
+          <li class="list-item">
+            <a href="index.html">FAQ</a>
+          </li>
+  
+          <li class="list-item">
+            <a href="services.html">Services</a>
+          </li>
+  
+          <li class="list-item">
+            <a href="#">Privacy Policy</a>
+          </li>
+  
+          <li class="list-item">
+            <a href="#">Term & Condition</a>
+          </li>
+  
+        </ul>
+        <div class="grid-item">
+  
+          <h4 class="item-heading">Contact Us</h4>
+  
+          <div class="wrapper">
+  
+            <p class="footer-text">
+              Gurukrupa Complex, Opp. Electrical SubStation, Near Upal Ring Road, Uppal, Hyderabad, Telangana 500039,
+              India
+              Call : +91 9063682021, +91 9550106506
+            </p>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      </div>
+  
+      <p class="copyright">
+        Copyright © 2022 <a href="#">Overseas Education PVT. LTD</a>. All rights reserved.
+      </p>
+  
+    </footer>
+  
+  </div>
+  <!-- ----------------------------changed testimonials------------------------ -->
+  <script>
+  var start=1;
+  function set_time()
+  {
+    // this method will apply time interval for 2.5 second
+    setInterval(image_show,2500);
+  }
+  
+  function image_show() {
+  
+    var image_data =  "./assets/images/testmo5.png" ;
+      var img_data = "./assets/images/head7.png";
+
+      if (start == 1) {
+        image_data = "./assets/images/testmo1.png";
+      }
+      else if (start == 2) {
+        image_data = "./assets/images/testmo2.png";
+      }
+      else if (start == 3) {
+        image_data = "./assets/images/testmo3.png";
+      }
+      else if (start == 4) {
+        image_data = "./assets/images/testmo4.png";
+      }
+      else {
+        start = 1;
+      }
+
+      if (start == 1) {
+        img_data = "./assets/images/head9.png";
+      }
+      else if (start == 2) {
+        img_data = "./assets/images/head3.png";
+      }
+      else if (start == 3) {
+        img_data = "./assets/images/banner-img.png";
+      }
+      else if (start == 4) {
+        img_data = "./assets/images/head8.png";
+      }
+      else if (start == 5) {
+        img_data = "./assets/images/head1.png";
+      }
+      else {
+        start = 1;
+      }
+
+      document.getElementById("testmo").src = "" + image_data;
+      document.getElementById("banner-img-main").src = "" + img_data;
+      start++;
+  
+  }
+  </script>
+  
+  
+  
+  
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./location selector/countries.json"></script>
+  <script src="./location selector/custom.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  
+  </body>
+  
+  <!-- <script src="./assets/js/pop.js"></script> -->
+  
+  </html>
