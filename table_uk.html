@@ -8,24 +8,26 @@
   <title>LC Overeas Education PVT. LTD</title>
 
   <!-- --------------------------fixed social-link--------------------- -->
-<style>
-  /* ul{
+  <style>
+    /* ul{
     z-index: 999999;
     position: fixed;
   } */
-  .fsm{
-  position: fixed;
-  width: 70px;
-  margin-top: 150px;
-  transition: all 0.3s linear;
-  box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
-}
-.fsm li{
-  height: 60px;
-  position:relative;
-}
-.fsm li a{
-  /* color: black;
+    .fsm {
+      position: fixed;
+      width: 70px;
+      margin-top: 150px;
+      transition: all 0.3s linear;
+      box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4);
+    }
+
+    .fsm li {
+      height: 60px;
+      position: relative;
+    }
+
+    .fsm li a {
+      /* color: black;
   display: block;
   height: 100%;
   width: 100%;
@@ -33,48 +35,58 @@
   padding-left:25%;
   border-bottom: 1px solid rgba(0,0,0,.4);
   transition: all .3s linear; */
-}
-.fsm li:nth-child(1) a{
-  background: #4267B2;
-}
-.fsm li:nth-child(2) a{
-  background: #1DA1F2;
-}
-.fsm li:nth-child(3) a{
-  background: #E1306C;
-}
-.fsm li:nth-child(4) a{
-  background: #2867B2;
-}
-.fsm li:nth-child(5) a{
-  background: #333;
-}
-.fsm li:nth-child(6) a{
-  background: #ff0000;
-}
-.fsm li a i{
-  position:absolute;
-  top: 17px;
-  left: 20px;
-  font-size: 27px;
-}
-ul li a span{
-  display: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-a:hover {
-  z-index:1;
-  /* width: 200px; */
-  border-bottom: 1px solid rgba(0,0,0,.5);
-  /* box-shadow: 0 0 1px 1px rgba(0,0,0,.3); */
-}
-ul li:hover a span{
-  padding-left: 30%;
-  display: block;
-}
-</style>
+    }
+
+    .fsm li:nth-child(1) a {
+      background: #4267B2;
+    }
+
+    .fsm li:nth-child(2) a {
+      background: #1DA1F2;
+    }
+
+    .fsm li:nth-child(3) a {
+      background: #E1306C;
+    }
+
+    .fsm li:nth-child(4) a {
+      background: #2867B2;
+    }
+
+    .fsm li:nth-child(5) a {
+      background: #333;
+    }
+
+    .fsm li:nth-child(6) a {
+      background: #ff0000;
+    }
+
+    .fsm li a i {
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      font-size: 27px;
+    }
+
+    ul li a span {
+      display: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      z-index: 1;
+      /* width: 200px; */
+      border-bottom: 1px solid rgba(0, 0, 0, .5);
+      /* box-shadow: 0 0 1px 1px rgba(0,0,0,.3); */
+    }
+
+    ul li:hover a span {
+      padding-left: 30%;
+      display: block;
+    }
+  </style>
 
   <!--
     - custom css link
@@ -87,6 +99,8 @@ ul li:hover a span{
   <link rel="stylesheet" href="./assets/css/common.css">
   <link rel="stylesheet" href="./assets/css/news.css">
   <link rel="stylesheet" href="./assets/css/enquirey.css">
+
+
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   <script src="https://kit.fontawesome.com/fafa56e3c9.js" crossorigin="anonymous"></script>
@@ -141,208 +155,208 @@ ul li:hover a span{
     </div>
 
 
-  <!-- ---------------header------------- -->
-  <header>
-    <div class="loc">
-      <div class="spic">
-        <ion-icon class="iloc" name="mail"></ion-icon>
-        <p><a href="mailto:info@safestudies-overseas.com">info@safestudies-overseas.com</a></p>
+    <!-- ---------------header------------- -->
+    <header>
+      <div class="loc">
+        <div class="spic">
+          <ion-icon class="iloc" name="mail"></ion-icon>
+          <p><a href="mailto:info@safestudies-overseas.com">info@safestudies-overseas.com</a></p>
+        </div>
+        <div class="ssic">
+          <ion-icon name="call" class="iloc"></ion-icon>
+          <p><a href="tel:+91 9550106506"> +91 9550106506,</a></p>
+          <!-- <p><a href="tel:+91 9063682021">+91 9063682021</a></p> -->
+        </div>
       </div>
-      <div class="ssic">
-        <ion-icon name="call" class="iloc"></ion-icon>
-        <p><a href="tel:+91 9550106506"> +91 9550106506,</a></p>
-        <p><a href="tel:+91 9063682021">+91 9063682021</a></p>
-      </div>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="Educator Logo">
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">About Us</a>
+          </li>
+          <li class="nav-item" id="submenu">
+            <a href="index.html">Study Aborad</a>
+            <div class="mega_menu">
+              <div class="meg">
+                <a href="">
+                  <img src="./assets/images/Australia.png" alt="">
+                  <p>Study in Australia</p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="table_canada.html">
+                  <img src="./assets/images/Canada.png" alt="">
+                  <p>Study in Canada</p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="table_ireland.html">
+                  <img src="./assets/images/Ireland.jpg" alt="">
+                  <p>Study in Ireland</p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="table_uk.html">
+                  <img src="./assets/images/UK.png" alt="">
+                  <p>Study in UK</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" id="submenu">
+            <a href="services.html">Services</a>
+            <div class="mega_menu">
+              <div class="meg">
+                <a href="services.html">
+                  <img
+                    src="https://th.bing.com/th/id/R.ada645eb1de780c7dd118356f6960ae5?rik=VH%2bcLeDxUnuYuw&riu=http%3a%2f%2fabroadeducare.com%2fimages%2fservices%2fCountry-University-Course-Selection.jpg&ehk=hTbFaPZ9t1XeREbgixs4k3Vf%2fFTYDQpLeBTnRpTSDW4%3d&risl=&pid=ImgRaw&r=0"
+                    alt="">
+                  <p>Country & Course selection </p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="services.html">
+                  <img src="https://th.bing.com/th/id/OIP.dK50xJj1OfuPOoqMdFMn3gHaE7?pid=ImgDet&rs=1" alt="">
+                  <p>Application & Admission </p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="services.html">
+                  <img src="https://suneducationgroup.com/wp-content/uploads/2016/09/5.jpg" alt="">
+                  <p>Visa Processing</p>
+                </a>
+              </div>
+              <div class="meg">
+                <a href="services.html">
+                  <img src="https://www.howellpipe.com/wp-content/uploads/2018/08/VAS-01.jpg" alt="">
+                  <p>Value-Added Services</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <button class="btn btn-primary">
+          <p class="btn-text">
+            <a href="#regs"><span style="color: white;">Register Now</span></a>
+          </p>
+          <span class="square"></span>
+        </button>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+
+    <!-- --------------------submit form------------------------- -->
+    <div class="enquire">
+      <ion-icon class="cross" name="close"></ion-icon>
+      <h1>know your Query now</h1>
+      <p class="rem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel laudantium harum debitis fugiat
+        beatae architecto
+        quo itaque odio quis voluptatem.</p>
+      <form action="submit" class="fsum">
+        <div class="fleft">
+          <label for="">First Name</label>
+          <input class="input" type="name" placeholder="Enter Your First Name">
+        </div>
+        <div class="fleft1">
+          <label for="">Last Name</label>
+          <input type="name" class="input" placeholder="Enter Your Last Name">
+        </div>
+        <div class="fleft">
+          <label for="">Enter Your Contact</label>
+          <input type="number" class="input" placeholder="Enter Your Contact">
+        </div>
+        <div class="fleft">
+          <label for="">Email</label>
+          <input type="email" class="input" placeholder="Enter Your Email">
+        </div>
+        <div class="fleft">
+          <label for="">Nationality</label>
+          <select name="" id="">
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+          </select>
+        </div>
+        <div class="fleft">
+          <label for="">Type of Study</label>
+          <select name="" id="">
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+          </select>
+        </div>
+        <div class="fleft">
+          <label for="">Year of Study</label>
+          <select name="" id="">
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+          </select>
+        </div>
+        <div class="fleft">
+          <label for="">Intersted Course</label>
+          <select name="" id="">
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+            <option value="required">Indian</option>
+          </select>
+        </div>
+        <input type="submit" value="submit" class="sum">
+      </form>
     </div>
 
-    <nav class="navbar">
 
-      <div class="navbar-brand">
-        <img src="./assets/images/logo.png" alt="Educator Logo">
-      </div>
+    <!-- --------------------------fixed social media--------------- -->
 
-      <ul class="navbar-nav">
-
-        <li class="nav-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html">About Us</a>
-        </li>
-        <li class="nav-item" id="submenu">
-          <a href="index.html">Study Aborad</a>
-          <div class="mega_menu">
-            <div class="meg">
-              <a href="">
-                <img src="./assets/images/Australia.png" alt="">
-                <p>Study in Australia</p>
-              </a>
-            </div>
-            <div class="meg">
-              <a href="table_canada.html">
-                <img src="./assets/images/Canada.png" alt="">
-                <p>Study in Canada</p>
-              </a>
-            </div>
-            <div class="meg">
-              <a href="table_ireland.html">
-                <img src="./assets/images/Ireland.jpg" alt="">
-                <p>Study in Ireland</p>
-              </a>
-            </div>
-            <div class="meg">
-              <a href="table_uk.html">
-                <img src="./assets/images/UK.png" alt="">
-                <p>Study in UK</p>
-              </a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item" id="submenu">
-          <a href="services.html">Services</a>
-          <div class="mega_menu">
-            <div class="meg">
-              <a href="services.html">
-                <img
-                  src="https://th.bing.com/th/id/R.ada645eb1de780c7dd118356f6960ae5?rik=VH%2bcLeDxUnuYuw&riu=http%3a%2f%2fabroadeducare.com%2fimages%2fservices%2fCountry-University-Course-Selection.jpg&ehk=hTbFaPZ9t1XeREbgixs4k3Vf%2fFTYDQpLeBTnRpTSDW4%3d&risl=&pid=ImgRaw&r=0"
-                  alt="">
-                <p>Country & Course selection  </p>
-              </a>
-            </div>
-            <div class="meg">
-              <a href="services.html">
-                <img src="https://th.bing.com/th/id/OIP.dK50xJj1OfuPOoqMdFMn3gHaE7?pid=ImgDet&rs=1" alt="">
-                <p>Application & Admission </p>
-              </a>
-            </div>
-            <div class="meg">
-              <a href="services.html">
-                <img src="https://suneducationgroup.com/wp-content/uploads/2016/09/5.jpg" alt="">
-                <p>Visa Processing</p>
-              </a>
-            </div>
-            <div class="meg">
-              <a href="services.html">
-                <img src="https://www.howellpipe.com/wp-content/uploads/2018/08/VAS-01.jpg" alt="">
-                <p>Value-Added Services</p>
-              </a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html">Contact Us</a>
-        </li>
-
+    <div class="fsm">
+      <ul>
+        <li><a href="www.facebook.com"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+        <li><a href="#"><i class="fab fa-github"></i><span>Github</span></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
       </ul>
-
-      <button class="btn btn-primary">
-        <p class="btn-text">
-          <a href="#regs"><span style="color: white;">Register Now</span></a>
-        </p>
-        <span class="square"></span>
-      </button>
-
-      <button class="nav-toggle-btn">
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-      </button>
-
-    </nav>
-
-  </header>
-
-  <!-- --------------------submit form------------------------- -->
-  <div class="enquire">
-    <ion-icon class="cross" name="close"></ion-icon>
-    <h1>know your Query now</h1>
-    <p class="rem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel laudantium harum debitis fugiat
-      beatae architecto
-      quo itaque odio quis voluptatem.</p>
-    <form action="submit" class="fsum">
-      <div class="fleft">
-        <label for="">First Name</label>
-        <input class="input" type="name" placeholder="Enter Your First Name">
-      </div>
-      <div class="fleft1">
-        <label for="">Last Name</label>
-        <input type="name" class="input" placeholder="Enter Your Last Name">
-      </div>
-      <div class="fleft">
-        <label for="">Enter Your Contact</label>
-        <input type="number" class="input" placeholder="Enter Your Contact">
-      </div>
-      <div class="fleft">
-        <label for="">Email</label>
-        <input type="email" class="input" placeholder="Enter Your Email">
-      </div>
-      <div class="fleft">
-        <label for="">Nationality</label>
-        <select name="" id="">
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-        </select>
-      </div>
-      <div class="fleft">
-        <label for="">Type of Study</label>
-        <select name="" id="">
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-        </select>
-      </div>
-      <div class="fleft">
-        <label for="">Year of Study</label>
-        <select name="" id="">
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-        </select>
-      </div>
-      <div class="fleft">
-        <label for="">Intersted Course</label>
-        <select name="" id="">
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-          <option value="required">Indian</option>
-        </select>
-      </div>
-      <input type="submit" value="submit" class="sum">
-    </form>
-  </div>
-
-    
- <!-- --------------------------fixed social media--------------- -->
-
- <div class="fsm">
-  <ul>
-    <li><a href="www.facebook.com"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
-    <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-    <li><a href="#"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
-    <li><a href="#"><i class="fab fa-github"></i><span>Github</span></a></li>
-    <li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
-  </ul>
-</div>
+    </div>
 
 
 
     <main>
 
-     
+
 
       <!--
         - #HOME SECTION
@@ -398,801 +412,824 @@ ul li:hover a span{
 
           <div class="img-box">
 
-            <img src="./assets/images/banner-img-bg.png" alt="colorful background shape"
-                class="background-shape">
-                <div id="main-img-banner">
-                  <img src="./assets/images/banner-img.png" alt="banner image" class="banner-img" id="banner-img-main">
-                </div>
+            <img src="./assets/images/banner-img-bg.png" alt="colorful background shape" class="background-shape">
+            <div id="main-img-banner">
+              <img src="./assets/images/banner-img.png" alt="banner image" class="banner-img" id="banner-img-main">
+            </div>
             <div id="image-data">
-              <img src="./assets/images/testmo1.png" alt="" class="icon-1 smooth-zigzag-anim-1"
-              width="250" id="testmo">
-              
+              <img src="./assets/images/testmo1.png" alt="" class="icon-1 smooth-zigzag-anim-1" width="250" id="testmo">
+
             </div>
 
             <img src="./assets/images/banner-aliment-icon-1.png" alt="" class="icon-2 smooth-zigzag-anim-2" width="240">
-            <img src="./assets/images/banner-aliment-icon-3.png" alt="" class="icon-3 smooth-zigzag-anim-3"
-                width="195">
+            <img src="./assets/images/banner-aliment-icon-3.png" alt="" class="icon-3 smooth-zigzag-anim-3" width="195">
             <img src="./assets/images/banner-aliment-icon-4.png" alt="" class="icon-4 drop-anim">
 
-        </div>
+          </div>
 
         </div>
 
       </section>
 
 
-        <section>
-            <div class="home-btn-group">
+      <section>
+        <div class="coucom">
 
-                <div>
-                    <p>
-                        The home country of students plays a very important role when planning for a destination to pursue higher education. This crucial step in life, dictates your career in the future. There are many factors which makes the UK an ideal destination for education. It has an excellent educational infrastructure, some of the top-notch and distinguished teaching methodologies in the world, a rich heritage, and diverse culture.
-                </div>
-                <div>
-                    <img src="./assets/images/usa.png" alt="course banner">
-                </div>
+          <div>
+            <p>
+              The home country of students plays a very important role when planning for a destination to pursue higher
+              education. This crucial step in life, dictates your career in the future. There are many factors which
+              makes the UK an ideal destination for education. It has an excellent educational infrastructure, some of
+              the top-notch and distinguished teaching methodologies in the world, a rich heritage, and diverse culture.
+          </div>
+          <div>
+            <img src="./assets/images/usa.png" alt="course banner">
+          </div>
 
-            </div>
-        </section>
-
-        <!-- ------------- Table-Section -----------------  -->
-        <section class="course">
-
-      
-        <div class="tabsection">
-            <p class="section-subtitle">Universities Of UK</p>
-            <table>
-                <thead >
-                    <tr id="thead">
-                        <th>Institution_Name</th>
-                        <th>Country_Name</th>
-                        <th>Location</th>
-                        <th>Website</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Institution_Name">Aberystwyth University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Aberystwyth</td>
-                        <td data-label="Website"> <a href="www.aber.ac.uk">www.aber.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Amity Global Business School London - UK</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.amitylondon.org.uk">www.amitylondon.org.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Anglia Ruskin University - Chelmsford & Cambridge</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Cambridge</td>
-                        <td data-label="Website"> <a href="www.anglia.ac.uk">www.anglia.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Arden University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Multiple</td>
-                        <td data-label="Website"> <a href="https://arden.ac.uk">https://arden.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Arts University Bournemouth
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Dorset</td>
-                        <td data-label="Website"> <a href="www.aub.ac.uk/">www.aub.ac.uk
-                            </a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Bangor University                          
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Bangor And London Campuses
-                            </td>
-                        <td data-label="Website"> <a href="www.bangor.ac.uk/">www.bangor.ac.uk/
-                            </a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Bath Spa University
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Bath</td>
-                        <td data-label="Website"> <a href="www.bathspa.ac.uk/">www.bathspa.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Birkbeck, University of London</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London
-                            </td>
-                        <td data-label="Website"> <a href="www.bbk.ac.uk">www.bbk.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Birmingham City University (BCU)</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Birmingham
-                            </td>
-                        <td data-label="Website"> <a href="www.bcu.ac.uk">www.bcu.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Bishop Grosseteste University, Lincoln</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Lincoln</td>
-                        <td data-label="Website"> <a href="https://www.bishopg.ac.uk/">https://www.bishopg.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Bournemouth University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Bournemouth</td>
-                        <td data-label="Website"> <a href="www.bournemouth.ac.uk">www.bournemouth.ac.uk
-                            </a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Brunel University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London
-                            </td>
-                        <td data-label="Website"> <a href="www.brunel.ac.uk">www.brunel.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Cardiff Metropolitan University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Cardiff</td>
-                        <td data-label="Website"> <a href="www.cardiffmet.ac.uk">www.cardiffmet.ac.uk</a></td>
-                    </tr>
-
-                    <tr>
-                        <td data-label="Institution_Name">CEG - (CSVPA) Cambridge School of Visual
-                            & Performing Arts
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Cambridge</td>
-                        <td data-label="Website"> <a href="www.csvpa.com">www.csvpa.com</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">CEG Cats College</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London,Cambridge, Canterbury
-                            </td>
-                        <td data-label="Website"> <a href="www.catscollege.com">www.catscollege.com</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">CEG OnCampus Coventry</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Coventry</td>
-                        <td data-label="Website"> <a href="www.oncampus.global">www.oncampus.global</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">CEG OnCampus London at Birkbeck</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.oncampus.global">www.oncampus.global</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">City University London</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">City University London</td>
-                        <td data-label="Website"> <a href="www.city.ac.uk">www.city.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Coventry University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Coventry & London
-                            </td>
-                        <td data-label="Website"> <a href="www.coventry.ac.uk">www.coventry.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Cranfield University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Cranfield</td>
-                        <td data-label="Website"> <a href="www.cranfield.ac.uk">www.cranfield.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">De Montfort University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Leicester</td>
-                        <td data-label="Website"> <a href="www.dmu.ac.uk">www.dmu.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Durham University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Durham</td>
-                        <td data-label="Website"> <a href="https://www.dur.ac.uk/">https://www.dur.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Edinburgh Napier University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Edinburgh</td>
-                        <td data-label="Website"> <a href="www.napier.ac.uk">www.napier.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Ethames Graduate School</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.etgs.org.uk">www.etgs.org.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Glasgow Caledonian University
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Glasgow,
-                            London
-                            </td>
-                        <td data-label="Website"> <a href="www.gcu.ac.uk">www.gcu.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">EDUCO UK - University of Prince Edward Island
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Prince Edward Island
-                            </td>
-                        <td data-label="Website"> <a href="https://www.upei.ca/">https://www.upei.ca/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Heriot Watt University - UK</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Edinburgh</td>
-                        <td data-label="Website"> <a href="www.hw.ac.uk">www.hw.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">INTO at City University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.intohigher.com/universities/united-kingdom/city-university-london.aspx">www.intohigher.com/universities/united-kingdom/city-university-london.aspx</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">INTO at Glasgow Caledonian University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Glasgow</td>
-                        <td data-label="Website"> <a href="http://www.intohigher.com/uk/en-gb/our-centres/into-glasgow-caledonian-university.aspx">http://www.intohigher.com/uk/en-gb/our-centres/into-glasgow-caledonian-university.aspx</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">INTO at Manchester Metropolitan University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Manchester</td>
-                        <td data-label="Website"> <a href="www.intohigher.com/uk/en-gb/our-centres/into-manchester-in-partnership-with-manchester-metropolitan-university.aspx">www.intohigher.com/uk/en-gb/our-centres/into-manchester-in-partnership-with-manchester-metropolitan-university.aspx</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Istituto Marangoni (UK)</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="https://www.istitutomarangoni.com/en/">https://www.istitutomarangoni.com/en/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">KAPLAN - Aston Intl College at Aston University
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Birmingham</td>
-                        <td data-label="Website"> <a href="www.kic.org.uk">www.kic.org.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">KAPLAN - Birmingham Intl College at University of Birmingham</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Birmingham</td>
-                        <td data-label="Website"> <a href="www.kic.org.uk">www.kic.org.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">KAPLAN - Brighton Intl College at University of Brighton</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Brighton</td>
-                        <td data-label="Website"> <a href="www.kic.org.uk">www.kic.org.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">KAPLAN - City University of London
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.kic.org.uk">www.kic.org.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Keele University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Keele</td>
-                        <td data-label="Website"> <a href="www.keele.ac.uk">www.keele.ac.uk</a></td>
-                    </tr>
-                   
-                    <tr>
-                        <td data-label="Institution_Name">Leeds Arts University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Leeds, West
-                            Yorkshire
-                            </td>
-                        <td data-label="Website"> <a href="https://www.leeds-art.ac.uk/">https://www.leeds-art.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Liverpool Hope University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Liverpool</td>
-                        <td data-label="Website"> <a href="www.hope.ac.uk">www.hope.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Le Cordon Bleu</td>
-                        <td data-label="Country_Name">Canada, UK, Australia, New Zealand, France, Japan, Mexico, Thailand
-                            </td>
-                        <td data-label="Location">Ottawa, London, Adelaide, Melbourne, Sydney, Wellington, Paris, Tokyo, Kobe, Mexico City,
-                            Bangkok
-                            </td>
-                        <td data-label="Website"> <a href="www.cordonbleu.edu">www.cordonbleu.edu</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Liverpool John Moores University (LJMU)</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Liverpool</td>
-                        <td data-label="Website"> <a href="www.ljmu.ac.uk">www.ljmu.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">London South Bank University (LSBU) </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Loughborough, London</td>
-                        <td data-label="Website"> <a href="www.lsbu.ac.uk">www.lboro.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">M Square - Acadia University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Dundee</td>
-                        <td data-label="Website"> <a href="www.acadiau.ca">www.abertay.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Manchester Metropolitan University
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Manchester</td>
-                        <td data-label="Website"> <a href="www.mmu.ac.uk">www.mmu.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Middlesex University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.mdx.ac.uk">www.mdx.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Navitas UK - BCUIC - Birmingham City
-                            University International College - Birmingham City University
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Birmingham</td>
-                        <td data-label="Website"> <a href="Birmingham">Birmingham</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Navitas UK - CRIC - Cambridge Ruskin International College - Anglia Ruskin University
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Cambridge</td>
-                        <td data-label="Website"> <a href="https://www.cric.navitas.com/">https://www.cric.navitas.com/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Navitas UK - EIC - Edinburgh Napier
-                            University
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Edinburgh</td>
-                        <td data-label="Website"> <a href="www.eic.navitas.com">www.eic.navitas.com</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Navitas UK - HIC - Hertfordshire International
-                            College - University of Hertfordshire
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Hatfield, Herts</td>
-                        <td data-label="Website"> <a href="https://www.hic.navitas.com/">https://www.hic.navitas.com/
-                            </a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Navitas UK - ICP - International College
-                            Portsmouth - University of Portsmouth
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Portsmouth</td>
-                        <td data-label="Website"> <a href="https://www.icp.navitas.com/">https://www.icp.navitas.com/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Newcastle University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Newcastle, London</td>
-                        <td data-label="Website"> <a href="www.ncl.ac.uk">www.ncl.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Norwich University of the Arts</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Norwich</td>
-                        <td data-label="Website"> <a href="https://www.nua.ac.uk/">https://www.nua.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Nottingham Trent University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Nottingham</td>
-                        <td data-label="Website"> <a href="www.ntu.ac.uk">www.ntu.ac.uk</a></td>
-                    </tr>
-                    <var><tr>
-                        <td data-label="Institution_Name">Oxford Brookes University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Oxford</td>
-                        <td data-label="Website"> <a href="www.brookes.ac.uk">www.brookes.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Plymouth University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Plymouth</td>
-                        <td data-label="Website"> <a href="www.plymouth.ac.uk">www.plymouth.ac.uk/</a></td>
-                    </tr>
-                     <tr>
-                        <td data-label="Institution_Name">QAHE - Northumbria University (London)</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="https://qahighereducation.com/partner-institutions/northumbria-university">https://qahighereducation.com/partner-institutions/northumbria-university</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Queen Margaret University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Edinburgh
-                            </td>
-                        <td data-label="Website"> <a href="www.qmu.ac.uk">www.qmu.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Ravensbourne University London
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="https://www.ravensbourne.ac.uk/">https://www.ravensbourne.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Ravensbourne University London</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="https://www.regents.ac.uk/">https://www.regents.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Royal Agriculatural University
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Gloucestershire</td>
-                        <td data-label="Website"> <a href="www.rau.ac.uk">www.rau.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Sheffield Hallam University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Sheffield</td>
-                        <td data-label="Website"> <a href="www.shu.ac.uk">www.shu.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Solent University (Old name: Southampton Solent)</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Southampton</td>
-                        <td data-label="Website"> <a href="www.solent,ac.uk">www.solent,ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Staffordshire University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Staffordshire</td>
-                        <td data-label="Website"> <a href="www.staffs.ac.uk">www.staffs.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Solent University (Old name: Southampton Solent)</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Southampton</td>
-                        <td data-label="Website"> <a href="www.solent.ac.uk">www.solent.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Staffordshire University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Staffordshire</td>
-                        <td data-label="Website"> <a href="www.mhc.ab.ca">www.staffs.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Study Group UK ISC Bellerbys College</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Brighton,
-                            Cambridge, London
-                            </td>
-                        <td data-label="Website"> <a href="https://www.bellerbys.com/">https://www.bellerbys.com/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Study Group UK ISC Coventry University (London Campus)</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London,Leeds,Lancaster,Liverpool,Huddersfield,Lincoln,Sheffield,Glasgow,Guildford,Sussex</td>
-                        <td data-label="Website"> <a href="http://corporate.studygroup.com/higher-education/united-kingdom/coventry-university-london-campus">http://corporate.studygroup.com/higher-education/united-kingdom/coventry-university-london-campus
-                            </a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Swansea University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Swansea</td>
-                        <td data-label="Website"> <a href="www.swansea.ac.uk">www.swansea.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">Teesside University</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Middles-
-                            Borough
-                            </td>
-                        <td data-label="Website"> <a href="www.tees.ac.uk">www.tees.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">The Glasgow School of Art</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Scotland</td>
-                        <td data-label="Website"> <a href="www.gsa.ac.uk">www.gsa.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">The Robert Gordon University (RGU)
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Aberdeen,
-                            Scotland
-                            </td>
-                        <td data-label="Website"> <a href="www.rgu.ac.uk">www.rgu.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">The University of Reading</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Reading</td>
-                        <td data-label="Website"> <a href="www.nyit.edu/UK">www.reading.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">UAL Camberwell College of Arts</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.arts.ac.uk/study-at-ual/short-courses">www.arts.ac.uk/study-at-ual/short-courses</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University College Birmingham</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Birmingham</td>
-                        <td data-label="Website"> <a href="www.ucb.ac.uk">www.ucb.ac.uk</a></td>
-                    </tr>
-
-                    <tr>
-                        <td data-label="Institution_Name">University of Aberdeen</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Aberdeen</td>
-                        <td data-label="Website"> <a href="www.abdn.ac.uk">www.abdn.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Bedfordshire</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Luton</td>
-                        <td data-label="Website"> <a href="www.beds.ac.uk">www.beds.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Bradford</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Bradford
-                            </td>
-                        <td data-label="Website"> <a href="www.bradford.ac.uk">www.bradford.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Brighton</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Brighton</td>
-                        <td data-label="Website"> <a href="www.brighton.ac.uk">www.brighton.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Bristol</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Bristol</td>
-                        <td data-label="Website"> <a href="www.bristol.ac.uk">www.bristol.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Central Lancashire (UCLAN)</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Preston</td>
-                        <td data-label="Website"> <a href="www.uclan.ac.uk">www.uclan.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Chester
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Chester</td>
-                        <td data-label="Website"> <a href="www.chester.ac.uk">www.chester.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Chichester</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Chichester</td>
-                        <td data-label="Website"> <a href="http://www.chi.ac.uk">http://www.chi.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Derby</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Derby</td>
-                        <td data-label="Website"> <a href="www.derby.ac.uk">www.derby.ac.uk</a></td>
-                    </tr>
-
-                     <tr>
-                        <td data-label="Institution_Name">University of Dundee</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Dundee</td>
-                        <td data-label="Website"> <a href="www.dundee.ac.uk">www.dundee.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of East Anglia</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Norwich</td>
-                        <td data-label="Website"> <a href="www.uea.ac.uk">www.uea.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of East London (UEL)</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.uel.ac.uk">www.uel.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Essex</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Colchester</td>
-                        <td data-label="Website"> <a href="www.essex.ac.uk">www.essex.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Exeter</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Exeter</td>
-                        <td data-label="Website"> <a href="www.exeter.ac.uk">www.exeter.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Greenwich
-                            </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.greenwich.ac.uk">www.greenwich.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Hertfordshire</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Hatfield, Hertfordshire
-                            </td>
-                        <td data-label="Website"> <a href="www.herts.ac.uk">www.herts.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">St. Clair College @ Acumen</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Toronto & Mississauga</td>
-                        <td data-label="Website"> <a href="http://www.stclaircollege.ca/acumencampus/">http://www.stclaircollege.ca/acumencampus/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Huddersfield</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Huddersfield</td>
-                        <td data-label="Website"> <a href="www.hud.ac.uk">www.hud.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Kent</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Canterbury</td>
-                        <td data-label="Website"> <a href="www.kent.ac.uk">www.kent.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Leeds</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Leeds</td>
-                        <td data-label="Website"> <a href="www.leeds.ac.uk">www.leeds.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Lincoln</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Lincoln</td>
-                        <td data-label="Website"> <a href="www.lincoln.ac.uk">www.lincoln.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Liverpool</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Liverpool and
-                            London
-                            </td>
-                        <td data-label="Website"> <a href="www.liv.ac.uk">www.liv.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Nottingham</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Nottingham</td>
-                        <td data-label="Website"> <a href="https://www.nottingham.ac.uk/">https://www.nottingham.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Portsmouth</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Winnipeg, Manitoba</td>
-                        <td data-label="Website"> <a href="www.port.ac.uk">www.port.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Roehampton </td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Portsmouth</td>
-                        <td data-label="Website"> <a href="http://www.roehampton.ac.uk">http://www.roehampton.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Salford</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Manchester</td>
-                        <td data-label="Website"> <a href="www.salford.ac.uk">www.salford.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of South Wales</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Pontypridd, Cardiff, Newport & London</td>
-                        <td data-label="Website"> <a href="www.southwales.ac.uk">www.southwales.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Southampton</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Southampto
-                            Brunswick
-                            </td>
-                        <td data-label="Website"> <a href="http://www.soton.ac.uk">http://www.soton.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Stirling - Scotland</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Stirling
-                            </td>
-                        <td data-label="Website"> <a href="www.stir.ac.uk">www.stir.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Strathclyde</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Glasgow</td>
-                        <td data-label="Website"> <a href="www.strath.ac.uk">www.strath.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Sunderland</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Sunderland,
-                            London
-                            </td>
-                        <td data-label="Website"> <a href="www.sunderland.ac.uk">www.sunderland.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Sunderland, London Campus</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.sunderland.ac.uk/londoncampus">www.sunderland.ac.uk/londoncampus</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of Surrey</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Guildford</td>
-                        <td data-label="Website"> <a href="www.surrey.ac.uk">www.surrey.ac.uk</a></td>
-                    </tr>
-
-                    <tr>
-                        <td data-label="Institution_Name">University of Sussex</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">University of Sussex</td>
-                        <td data-label="Website"> <a href="https://www.sussex.ac.uk/">https://www.sussex.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of the Arts London</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="www.arts.ac.uk/study-at-ual/short- courses/">www.arts.ac.uk/study-at-ual/short- courses/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of The West of Scotland (Main
-                            Campus only )</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Glasgow</td>
-                        <td data-label="Website"> <a href="www.uws.ac.uk">www.uws.ac.uk</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of West London (UWL)</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">London</td>
-                        <td data-label="Website"> <a href="https://www.uwl.ac.uk/">https://www.uwl.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">University of York</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Heslington, York</td>
-                        <td data-label="Website"> < href="http://www.york.ac.uk/">http://www.york.ac.uk/</a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Institution_Name">SAE Institute & Qantm College</td>
-                        <td data-label="Country_Name">UK</td>
-                        <td data-label="Location">Worldwide
-                            </td>
-                        <td data-label="Website"> <a href="www.sae.edu">www.sae.edu</a></td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
-    </section>
+      </section>
+
+      <!-- ------------- Table-Section -----------------  -->
+      <section class="course">
+
+
+        <div class="tabsection">
+          <p class="section-subtitle">Universities Of UK</p>
+          <table class="tb">
+            <thead>
+              <tr id="thead">
+                <th>Institution_Name</th>
+                <th>Country_Name</th>
+                <th>Location</th>
+                <th>Website</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Institution_Name">Aberystwyth University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Aberystwyth</td>
+                <td data-label="Website"> <a href="www.aber.ac.uk">www.aber.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Amity Global Business School London - UK</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">London</td>
+                <td data-label="Website"> <a href="www.amitylondon.org.uk">www.amitylondon.org.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Anglia Ruskin University - Chelmsford & Cambridge</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Cambridge</td>
+                <td data-label="Website"> <a href="www.anglia.ac.uk">www.anglia.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Arden University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Multiple</td>
+                <td data-label="Website"> <a href="https://arden.ac.uk">https://arden.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Arts University Bournemouth
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Dorset</td>
+                <td data-label="Website"> <a href="www.aub.ac.uk/">www.aub.ac.uk
+                  </a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Bangor University
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Bangor And London Campuses
+                </td>
+                <td data-label="Website"> <a href="www.bangor.ac.uk/">www.bangor.ac.uk/
+                  </a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Bath Spa University
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Bath</td>
+                <td data-label="Website"> <a href="www.bathspa.ac.uk/">www.bathspa.ac.uk/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Birkbeck, University of London</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">London
+                </td>
+                <td data-label="Website"> <a href="www.bbk.ac.uk">www.bbk.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Birmingham City University (BCU)</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Birmingham
+                </td>
+                <td data-label="Website"> <a href="www.bcu.ac.uk">www.bcu.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Bishop Grosseteste University, Lincoln</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Lincoln</td>
+                <td data-label="Website"> <a href="https://www.bishopg.ac.uk/">https://www.bishopg.ac.uk/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Bournemouth University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Bournemouth</td>
+                <td data-label="Website"> <a href="www.bournemouth.ac.uk">www.bournemouth.ac.uk
+                  </a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Brunel University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">London
+                </td>
+                <td data-label="Website"> <a href="www.brunel.ac.uk">www.brunel.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Cardiff Metropolitan University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Cardiff</td>
+                <td data-label="Website"> <a href="www.cardiffmet.ac.uk">www.cardiffmet.ac.uk</a></td>
+              </tr>
+
+              <tr>
+                <td data-label="Institution_Name">CEG - (CSVPA) Cambridge School of Visual
+                  & Performing Arts
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Cambridge</td>
+                <td data-label="Website"> <a href="www.csvpa.com">www.csvpa.com</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">CEG Cats College</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">London,Cambridge, Canterbury
+                </td>
+                <td data-label="Website"> <a href="www.catscollege.com">www.catscollege.com</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">CEG OnCampus Coventry</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Coventry</td>
+                <td data-label="Website"> <a href="www.oncampus.global">www.oncampus.global</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">CEG OnCampus London at Birkbeck</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">London</td>
+                <td data-label="Website"> <a href="www.oncampus.global">www.oncampus.global</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">City University London</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">City University London</td>
+                <td data-label="Website"> <a href="www.city.ac.uk">www.city.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Coventry University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Coventry & London
+                </td>
+                <td data-label="Website"> <a href="www.coventry.ac.uk">www.coventry.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Cranfield University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Cranfield</td>
+                <td data-label="Website"> <a href="www.cranfield.ac.uk">www.cranfield.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">De Montfort University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Leicester</td>
+                <td data-label="Website"> <a href="www.dmu.ac.uk">www.dmu.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Durham University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Durham</td>
+                <td data-label="Website"> <a href="https://www.dur.ac.uk/">https://www.dur.ac.uk/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Edinburgh Napier University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Edinburgh</td>
+                <td data-label="Website"> <a href="www.napier.ac.uk">www.napier.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Ethames Graduate School</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">London</td>
+                <td data-label="Website"> <a href="www.etgs.org.uk">www.etgs.org.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Glasgow Caledonian University
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Glasgow,
+                  London
+                </td>
+                <td data-label="Website"> <a href="www.gcu.ac.uk">www.gcu.ac.uk/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">EDUCO UK - University of Prince Edward Island
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Prince Edward Island
+                </td>
+                <td data-label="Website"> <a href="https://www.upei.ca/">https://www.upei.ca/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Heriot Watt University - UK</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Edinburgh</td>
+                <td data-label="Website"> <a href="www.hw.ac.uk">www.hw.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">INTO at City University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">London</td>
+                <td data-label="Website"> <a
+                    href="www.intohigher.com/universities/united-kingdom/city-university-london.aspx">www.intohigher.com/universities/united-kingdom/city-university-london.aspx</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">INTO at Glasgow Caledonian University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Glasgow</td>
+                <td data-label="Website"> <a
+                    href="http://www.intohigher.com/uk/en-gb/our-centres/into-glasgow-caledonian-university.aspx">http://www.intohigher.com/uk/en-gb/our-centres/into-glasgow-caledonian-university.aspx</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">INTO at Manchester Metropolitan University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Manchester</td>
+                <td data-label="Website"> <a
+                    href="www.intohigher.com/uk/en-gb/our-centres/into-manchester-in-partnership-with-manchester-metropolitan-university.aspx">www.intohigher.com/uk/en-gb/our-centres/into-manchester-in-partnership-with-manchester-metropolitan-university.aspx</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Istituto Marangoni (UK)</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">London</td>
+                <td data-label="Website"> <a
+                    href="https://www.istitutomarangoni.com/en/">https://www.istitutomarangoni.com/en/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">KAPLAN - Aston Intl College at Aston University
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Birmingham</td>
+                <td data-label="Website"> <a href="www.kic.org.uk">www.kic.org.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">KAPLAN - Birmingham Intl College at University of Birmingham</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Birmingham</td>
+                <td data-label="Website"> <a href="www.kic.org.uk">www.kic.org.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">KAPLAN - Brighton Intl College at University of Brighton</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Brighton</td>
+                <td data-label="Website"> <a href="www.kic.org.uk">www.kic.org.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">KAPLAN - City University of London
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">London</td>
+                <td data-label="Website"> <a href="www.kic.org.uk">www.kic.org.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Keele University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Keele</td>
+                <td data-label="Website"> <a href="www.keele.ac.uk">www.keele.ac.uk</a></td>
+              </tr>
+
+              <tr>
+                <td data-label="Institution_Name">Leeds Arts University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Leeds, West
+                  Yorkshire
+                </td>
+                <td data-label="Website"> <a href="https://www.leeds-art.ac.uk/">https://www.leeds-art.ac.uk/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Liverpool Hope University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Liverpool</td>
+                <td data-label="Website"> <a href="www.hope.ac.uk">www.hope.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Le Cordon Bleu</td>
+                <td data-label="Country_Name">Canada, UK, Australia, New Zealand, France, Japan, Mexico, Thailand
+                </td>
+                <td data-label="Location">Ottawa, London, Adelaide, Melbourne, Sydney, Wellington, Paris, Tokyo, Kobe,
+                  Mexico City,
+                  Bangkok
+                </td>
+                <td data-label="Website"> <a href="www.cordonbleu.edu">www.cordonbleu.edu</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Liverpool John Moores University (LJMU)</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Liverpool</td>
+                <td data-label="Website"> <a href="www.ljmu.ac.uk">www.ljmu.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">London South Bank University (LSBU) </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Loughborough, London</td>
+                <td data-label="Website"> <a href="www.lsbu.ac.uk">www.lboro.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">M Square - Acadia University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Dundee</td>
+                <td data-label="Website"> <a href="www.acadiau.ca">www.abertay.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Manchester Metropolitan University
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Manchester</td>
+                <td data-label="Website"> <a href="www.mmu.ac.uk">www.mmu.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Middlesex University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">London</td>
+                <td data-label="Website"> <a href="www.mdx.ac.uk">www.mdx.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Navitas UK - BCUIC - Birmingham City
+                  University International College - Birmingham City University
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Birmingham</td>
+                <td data-label="Website"> <a href="Birmingham">Birmingham</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Navitas UK - CRIC - Cambridge Ruskin International College - Anglia
+                  Ruskin University
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Cambridge</td>
+                <td data-label="Website"> <a href="https://www.cric.navitas.com/">https://www.cric.navitas.com/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Navitas UK - EIC - Edinburgh Napier
+                  University
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Edinburgh</td>
+                <td data-label="Website"> <a href="www.eic.navitas.com">www.eic.navitas.com</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Navitas UK - HIC - Hertfordshire International
+                  College - University of Hertfordshire
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Hatfield, Herts</td>
+                <td data-label="Website"> <a href="https://www.hic.navitas.com/">https://www.hic.navitas.com/
+                  </a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Navitas UK - ICP - International College
+                  Portsmouth - University of Portsmouth
+                </td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Portsmouth</td>
+                <td data-label="Website"> <a href="https://www.icp.navitas.com/">https://www.icp.navitas.com/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Newcastle University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Newcastle, London</td>
+                <td data-label="Website"> <a href="www.ncl.ac.uk">www.ncl.ac.uk</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Norwich University of the Arts</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Norwich</td>
+                <td data-label="Website"> <a href="https://www.nua.ac.uk/">https://www.nua.ac.uk/</a></td>
+              </tr>
+              <tr>
+                <td data-label="Institution_Name">Nottingham Trent University</td>
+                <td data-label="Country_Name">UK</td>
+                <td data-label="Location">Nottingham</td>
+                <td data-label="Website"> <a href="www.ntu.ac.uk">www.ntu.ac.uk</a></td>
+              </tr>
+              <var>
+                <tr>
+                  <td data-label="Institution_Name">Oxford Brookes University</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Oxford</td>
+                  <td data-label="Website"> <a href="www.brookes.ac.uk">www.brookes.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Plymouth University</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Plymouth</td>
+                  <td data-label="Website"> <a href="www.plymouth.ac.uk">www.plymouth.ac.uk/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">QAHE - Northumbria University (London)</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">London</td>
+                  <td data-label="Website"> <a
+                      href="https://qahighereducation.com/partner-institutions/northumbria-university">https://qahighereducation.com/partner-institutions/northumbria-university</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Queen Margaret University</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Edinburgh
+                  </td>
+                  <td data-label="Website"> <a href="www.qmu.ac.uk">www.qmu.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Ravensbourne University London
+                  </td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">London</td>
+                  <td data-label="Website"> <a
+                      href="https://www.ravensbourne.ac.uk/">https://www.ravensbourne.ac.uk/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Ravensbourne University London</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">London</td>
+                  <td data-label="Website"> <a href="https://www.regents.ac.uk/">https://www.regents.ac.uk/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Royal Agriculatural University
+                  </td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Gloucestershire</td>
+                  <td data-label="Website"> <a href="www.rau.ac.uk">www.rau.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Sheffield Hallam University</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Sheffield</td>
+                  <td data-label="Website"> <a href="www.shu.ac.uk">www.shu.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Solent University (Old name: Southampton Solent)</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Southampton</td>
+                  <td data-label="Website"> <a href="www.solent,ac.uk">www.solent,ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Staffordshire University</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Staffordshire</td>
+                  <td data-label="Website"> <a href="www.staffs.ac.uk">www.staffs.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Solent University (Old name: Southampton Solent)</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Southampton</td>
+                  <td data-label="Website"> <a href="www.solent.ac.uk">www.solent.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Staffordshire University</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Staffordshire</td>
+                  <td data-label="Website"> <a href="www.mhc.ab.ca">www.staffs.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Study Group UK ISC Bellerbys College</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Brighton,
+                    Cambridge, London
+                  </td>
+                  <td data-label="Website"> <a href="https://www.bellerbys.com/">https://www.bellerbys.com/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Study Group UK ISC Coventry University (London Campus)</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Sussex</td>
+                  <td data-label="Website"> <a href="http://corporate.studygroup.com/higher-education/united-kingdom/coventry-university-london-campus">http://corporate.studygroup.com/higher-education/united-kingdom/coventry-university-london-campus</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Swansea University</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Swansea</td>
+                  <td data-label="Website"> <a href="www.swansea.ac.uk">www.swansea.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">Teesside University</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Middles-
+                    Borough
+                  </td>
+                  <td data-label="Website"> <a href="www.tees.ac.uk">www.tees.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">The Glasgow School of Art</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Scotland</td>
+                  <td data-label="Website"> <a href="www.gsa.ac.uk">www.gsa.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">The Robert Gordon University (RGU)
+                  </td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Aberdeen,
+                    Scotland
+                  </td>
+                  <td data-label="Website"> <a href="www.rgu.ac.uk">www.rgu.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">The University of Reading</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Reading</td>
+                  <td data-label="Website"> <a href="www.nyit.edu/UK">www.reading.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">UAL Camberwell College of Arts</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">London</td>
+                  <td data-label="Website"> <a
+                      href="www.arts.ac.uk/study-at-ual/short-courses">www.arts.ac.uk/study-at-ual/short-courses</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University College Birmingham</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Birmingham</td>
+                  <td data-label="Website"> <a href="www.ucb.ac.uk">www.ucb.ac.uk</a></td>
+                </tr>
+
+                <tr>
+                  <td data-label="Institution_Name">University of Aberdeen</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Aberdeen</td>
+                  <td data-label="Website"> <a href="www.abdn.ac.uk">www.abdn.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Bedfordshire</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Luton</td>
+                  <td data-label="Website"> <a href="www.beds.ac.uk">www.beds.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Bradford</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Bradford
+                  </td>
+                  <td data-label="Website"> <a href="www.bradford.ac.uk">www.bradford.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Brighton</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Brighton</td>
+                  <td data-label="Website"> <a href="www.brighton.ac.uk">www.brighton.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Bristol</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Bristol</td>
+                  <td data-label="Website"> <a href="www.bristol.ac.uk">www.bristol.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Central Lancashire (UCLAN)</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Preston</td>
+                  <td data-label="Website"> <a href="www.uclan.ac.uk">www.uclan.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Chester
+                  </td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Chester</td>
+                  <td data-label="Website"> <a href="www.chester.ac.uk">www.chester.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Chichester</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Chichester</td>
+                  <td data-label="Website"> <a href="http://www.chi.ac.uk">http://www.chi.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Derby</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Derby</td>
+                  <td data-label="Website"> <a href="www.derby.ac.uk">www.derby.ac.uk</a></td>
+                </tr>
+
+                <tr>
+                  <td data-label="Institution_Name">University of Dundee</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Dundee</td>
+                  <td data-label="Website"> <a href="www.dundee.ac.uk">www.dundee.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of East Anglia</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Norwich</td>
+                  <td data-label="Website"> <a href="www.uea.ac.uk">www.uea.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of East London (UEL)</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">London</td>
+                  <td data-label="Website"> <a href="www.uel.ac.uk">www.uel.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Essex</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Colchester</td>
+                  <td data-label="Website"> <a href="www.essex.ac.uk">www.essex.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Exeter</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Exeter</td>
+                  <td data-label="Website"> <a href="www.exeter.ac.uk">www.exeter.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Greenwich
+                  </td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">London</td>
+                  <td data-label="Website"> <a href="www.greenwich.ac.uk">www.greenwich.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Hertfordshire</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Hatfield, Hertfordshire
+                  </td>
+                  <td data-label="Website"> <a href="www.herts.ac.uk">www.herts.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">St. Clair College @ Acumen</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Toronto & Mississauga</td>
+                  <td data-label="Website"> <a
+                      href="http://www.stclaircollege.ca/acumencampus/">http://www.stclaircollege.ca/acumencampus/</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Huddersfield</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Huddersfield</td>
+                  <td data-label="Website"> <a href="www.hud.ac.uk">www.hud.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Kent</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Canterbury</td>
+                  <td data-label="Website"> <a href="www.kent.ac.uk">www.kent.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Leeds</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Leeds</td>
+                  <td data-label="Website"> <a href="www.leeds.ac.uk">www.leeds.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Lincoln</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Lincoln</td>
+                  <td data-label="Website"> <a href="www.lincoln.ac.uk">www.lincoln.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Liverpool</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Liverpool and
+                    London
+                  </td>
+                  <td data-label="Website"> <a href="www.liv.ac.uk">www.liv.ac.uk/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Nottingham</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Nottingham</td>
+                  <td data-label="Website"> <a href="https://www.nottingham.ac.uk/">https://www.nottingham.ac.uk/</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Portsmouth</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Winnipeg, Manitoba</td>
+                  <td data-label="Website"> <a href="www.port.ac.uk">www.port.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Roehampton </td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Portsmouth</td>
+                  <td data-label="Website"> <a href="http://www.roehampton.ac.uk">http://www.roehampton.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Salford</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Manchester</td>
+                  <td data-label="Website"> <a href="www.salford.ac.uk">www.salford.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of South Wales</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Pontypridd, Cardiff, Newport & London</td>
+                  <td data-label="Website"> <a href="www.southwales.ac.uk">www.southwales.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Southampton</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Southampto
+                    Brunswick
+                  </td>
+                  <td data-label="Website"> <a href="http://www.soton.ac.uk">http://www.soton.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Stirling - Scotland</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Stirling
+                  </td>
+                  <td data-label="Website"> <a href="www.stir.ac.uk">www.stir.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Strathclyde</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Glasgow</td>
+                  <td data-label="Website"> <a href="www.strath.ac.uk">www.strath.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Sunderland</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Sunderland,
+                    London
+                  </td>
+                  <td data-label="Website"> <a href="www.sunderland.ac.uk">www.sunderland.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Sunderland, London Campus</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">London</td>
+                  <td data-label="Website"> <a
+                      href="www.sunderland.ac.uk/londoncampus">www.sunderland.ac.uk/londoncampus</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of Surrey</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Guildford</td>
+                  <td data-label="Website"> <a href="www.surrey.ac.uk">www.surrey.ac.uk</a></td>
+                </tr>
+
+                <tr>
+                  <td data-label="Institution_Name">University of Sussex</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">University of Sussex</td>
+                  <td data-label="Website"> <a href="https://www.sussex.ac.uk/">https://www.sussex.ac.uk/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of the Arts London</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">London</td>
+                  <td data-label="Website"> <a
+                      href="www.arts.ac.uk/study-at-ual/short- courses/">www.arts.ac.uk/study-at-ual/short- courses/</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of The West of Scotland (Main
+                    Campus only )</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Glasgow</td>
+                  <td data-label="Website"> <a href="www.uws.ac.uk">www.uws.ac.uk</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of West London (UWL)</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">London</td>
+                  <td data-label="Website"> <a href="https://www.uwl.ac.uk/">https://www.uwl.ac.uk/</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">University of York</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Heslington, York</td>
+                  <td data-label="Website">
+                    <a href="http://www.york.ac.uk/">http://www.york.ac.uk/</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Institution_Name">SAE Institute & Qantm College</td>
+                  <td data-label="Country_Name">UK</td>
+                  <td data-label="Location">Worldwide
+                  </td>
+                  <td data-label="Website"> <a href="www.sae.edu">www.sae.edu</a></td>
+                </tr> 
+            </tbody>
+          </table>
+        </div>
+      </section>
+  
     </div>
 </body>
 
@@ -1205,168 +1242,114 @@ ul li:hover a span{
 
 <footer>
 
-    <div class="footer-grid">
+  <div class="footer-grid">
 
-      <div class="grid-item">
+    <div class="grid-item">
 
-        <div class="footer-logo">
-          <img src="./assets/images/logo.png" alt="educator logo white">
-        </div>
+      <div class="footer-logo">
+        <img src="./assets/images/logo.png" alt="educator logo white">
+      </div>
+
+      <p class="footer-text">
+        Our range of value-added services include assistance for Education Loan, Financial Aid, Pre-Departure
+        Briefing, Forex, Travel and Accommodation Assistance.
+      </p>
+
+      <div class="social-link">
+        <a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+
+    </div>
+
+    <ul class="grid-item">
+
+      <h4 class="item-heading">Our Link</h4>
+
+      <li class="list-item">
+        <a href="index.html">Home</a>
+      </li>
+
+      <li class="list-item">
+        <a href="index.html">About Us</a>
+      </li>
+
+      <li class="list-item">
+        <a href="index.html">Study Abroad</a>
+      </li>
+
+      <li class="list-item">
+        <a href="index.html">Services</a>
+      </li>
+
+      <li class="list-item">
+        <a href="contact.html">Contact Us</a>
+      </li>
+
+    </ul>
+
+    <ul class="grid-item">
+
+      <h4 class="item-heading">Other Link</h4>
+
+      <li class="list-item">
+        <a href="index.html">Team</a>
+      </li>
+
+      <li class="list-item">
+        <a href="index.html">FAQ</a>
+      </li>
+
+      <li class="list-item">
+        <a href="services.html">Services</a>
+      </li>
+
+      <li class="list-item">
+        <a href="#">Privacy Policy</a>
+      </li>
+
+      <li class="list-item">
+        <a href="#">Term & Condition</a>
+      </li>
+
+    </ul>
+    <div class="grid-item">
+
+      <h4 class="item-heading">Contact Us</h4>
+
+      <div class="wrapper">
 
         <p class="footer-text">
-          Our range of value-added services include assistance for Education Loan, Financial Aid, Pre-Departure
-          Briefing, Forex, Travel and Accommodation Assistance.
+          Gurukrupa Complex, Opp. Electrical SubStation, Near Upal Ring Road, Uppal, Hyderabad, Telangana 500039,
+          India
+          Call : +91 9063682021, +91 9550106506
         </p>
-
-        <div class="social-link">
-          <a href="#">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="logo-youtube"></ion-icon>
-          </a>
-        </div>
-
-      </div>
-
-      <ul class="grid-item">
-
-        <h4 class="item-heading">Our Link</h4>
-
-        <li class="list-item">
-          <a href="index.html">Home</a>
-        </li>
-
-        <li class="list-item">
-          <a href="index.html">About Us</a>
-        </li>
-
-        <li class="list-item">
-          <a href="index.html">Study Abroad</a>
-        </li>
-
-        <li class="list-item">
-          <a href="index.html">Services</a>
-        </li>
-
-        <li class="list-item">
-          <a href="contact.html">Contact Us</a>
-        </li>
-
-      </ul>
-
-      <ul class="grid-item">
-
-        <h4 class="item-heading">Other Link</h4>
-
-        <li class="list-item">
-          <a href="index.html">Team</a>
-        </li>
-
-        <li class="list-item">
-          <a href="index.html">FAQ</a>
-        </li>
-
-        <li class="list-item">
-          <a href="services.html">Services</a>
-        </li>
-
-        <li class="list-item">
-          <a href="#">Privacy Policy</a>
-        </li>
-
-        <li class="list-item">
-          <a href="#">Term & Condition</a>
-        </li>
-
-      </ul>
-      <div class="grid-item">
-
-        <h4 class="item-heading">Contact Us</h4>
-
-        <div class="wrapper">
-
-          <p class="footer-text">
-            Gurukrupa Complex, Opp. Electrical SubStation, Near Upal Ring Road, Uppal, Hyderabad, Telangana 500039,
-            India
-            Call : +91 9063682021, +91 9550106506
-          </p>
-        </div>
-
       </div>
 
     </div>
 
-    </div>
+  </div>
 
-    <p class="copyright">
-      Copyright © 2022 <a href="#">Overseas Education PVT. LTD</a>. All rights reserved.
-    </p>
+  </div>
 
-  </footer>
+  <p class="copyright">
+    Copyright © 2022 <a href="#">Overseas Education PVT. LTD</a>. All rights reserved.
+  </p>
+
+</footer>
 
 </div>
-<!-- ----------------------------changed testimonials------------------------ -->
-<script>
-var start=1;
-function set_time()
-{
-  // this method will apply time interval for 2.5 second
-  setInterval(image_show,2500);
-}
 
-function image_show() 
-{
-  var image_data =  "./assets/images/testmo5.png" ;
-      var img_data = "./assets/images/head7.png";
-
-      if (start == 1) {
-        image_data = "./assets/images/testmo1.png";
-      }
-      else if (start == 2) {
-        image_data = "./assets/images/testmo2.png";
-      }
-      else if (start == 3) {
-        image_data = "./assets/images/testmo3.png";
-      }
-      else if (start == 4) {
-        image_data = "./assets/images/testmo4.png";
-      }
-      else {
-        start = 1;
-      }
-
-      if (start == 1) {
-        img_data = "./assets/images/head9.png";
-      }
-      else if (start == 2) {
-        img_data = "./assets/images/head3.png";
-      }
-      else if (start == 3) {
-        img_data = "./assets/images/banner-img.png";
-      }
-      else if (start == 4) {
-        img_data = "./assets/images/head8.png";
-      }
-      else if (start == 5) {
-        img_data = "./assets/images/head1.png";
-      }
-      else {
-        start = 1;
-      }
-
-      document.getElementById("testmo").src = "" + image_data;
-      document.getElementById("banner-img-main").src = "" + img_data;
-      start++;
-
-}
-</script>
 
 
 
@@ -1383,8 +1366,7 @@ function image_show()
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<script
-src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 </body>
 

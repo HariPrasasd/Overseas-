@@ -8,24 +8,26 @@
   <title>LC Overeas Education PVT. LTD</title>
 
   <!-- --------------------------fixed social-link--------------------- -->
-<style>
-  /* ul{
+  <style>
+    /* ul{
     z-index: 999999;
     position: fixed;
   } */
-  .fsm{
-  position: fixed;
-  width: 70px;
-  margin-top: 150px;
-  transition: all 0.3s linear;
-  box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
-}
-.fsm li{
-  height: 60px;
-  position:relative;
-}
-.fsm li a{
-  /* color: black;
+    .fsm {
+      position: fixed;
+      width: 70px;
+      margin-top: 150px;
+      transition: all 0.3s linear;
+      box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4);
+    }
+
+    .fsm li {
+      height: 60px;
+      position: relative;
+    }
+
+    .fsm li a {
+      /* color: black;
   display: block;
   height: 100%;
   width: 100%;
@@ -33,92 +35,106 @@
   padding-left:25%;
   border-bottom: 1px solid rgba(0,0,0,.4);
   transition: all .3s linear; */
-}
-.fsm li:nth-child(1) a{
-  background: #4267B2;
-}
-.fsm li:nth-child(2) a{
-  background: #1DA1F2;
-}
-.fsm li:nth-child(3) a{
-  background: #E1306C;
-}
-.fsm li:nth-child(4) a{
-  background: #2867B2;
-}
-.fsm li:nth-child(5) a{
-  background: #333;
-}
-.fsm li:nth-child(6) a{
-  background: #ff0000;
-}
-.fsm li a i{
-  position:absolute;
-  top: 17px;
-  left: 20px;
-  font-size: 27px;
-}
-ul li a span{
-  display: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-a:hover {
-  z-index:1;
-  /* width: 200px; */
-  border-bottom: 1px solid rgba(0,0,0,.5);
-  /* box-shadow: 0 0 1px 1px rgba(0,0,0,.3); */
-}
-ul li:hover a span{
-  padding-left: 30%;
-  display: block;
-}
-</style>
+    }
 
-<style>
-  .sec {
-    padding: 30px;
-    line-height: 0.4in;
-  }
+    .fsm li:nth-child(1) a {
+      background: #4267B2;
+    }
 
-  .box {
-    /* background: blue; */
-    height: 200px;
-    margin: 10px;
-    box-shadow: 2px 4px 5px white;
-    transform: translateX(400%);
-    transition: transform 0.9s ease;
-  }
-  .box:nth-of-type(even){
-    transform: translateX(-400%);
-  }
-  .box.show{
-    transform: translateX(0);
-  }
-  .box hr{
-    position: relative;
-    width: 100px;
-    color: aqua;
-    background-color: aqua;
-    border: 1px solid orange;
-  }
-  .box hr:hover{
-    width: 150px;
-    cursor: pointer;
-    border: 1px solid blue;
-  }
+    .fsm li:nth-child(2) a {
+      background: #1DA1F2;
+    }
 
-  @media (max-width: 1000px){
-    .box{
-      height: auto;
-      margin: auto;
-      overflow: hidden;
+    .fsm li:nth-child(3) a {
+      background: #E1306C;
+    }
+
+    .fsm li:nth-child(4) a {
+      background: #2867B2;
+    }
+
+    .fsm li:nth-child(5) a {
+      background: #333;
+    }
+
+    .fsm li:nth-child(6) a {
+      background: #ff0000;
+    }
+
+    .fsm li a i {
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      font-size: 27px;
+    }
+
+    ul li a span {
+      display: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      z-index: 1;
+      /* width: 200px; */
+      border-bottom: 1px solid rgba(0, 0, 0, .5);
+      /* box-shadow: 0 0 1px 1px rgba(0,0,0,.3); */
+    }
+
+    ul li:hover a span {
+      padding-left: 30%;
       display: block;
     }
-    
-  }
-</style>
+  </style>
+
+  <style>
+    .sec {
+      padding: 30px;
+      line-height: 0.4in;
+    }
+
+    .box {
+      /* background: blue; */
+      /* height: 200px; */
+      margin: 10px;
+      box-shadow: 2px 4px 5px white;
+      transform: translateX(400%);
+      transition: transform 0.9s ease;
+    }
+
+    .box:nth-of-type(even) {
+      transform: translateX(-400%);
+    }
+
+    .box.show {
+      transform: translateX(0);
+    }
+
+    .box hr {
+      position: relative;
+      width: 100px;
+      color: aqua;
+      background-color: aqua;
+      border: 1px solid orange;
+    }
+
+    .box hr:hover {
+      width: 150px;
+      cursor: pointer;
+      border: 1px solid blue;
+    }
+
+    @media (max-width: 1000px) {
+      .box {
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        display: block;
+      }
+
+    }
+  </style>
 
   <!--
     - custom css link
@@ -193,18 +209,18 @@ ul li:hover a span{
         <div class="ssic">
           <ion-icon name="call" class="iloc"></ion-icon>
           <p><a href="tel:+91 9550106506"> +91 9550106506,</a></p>
-          <p><a href="tel:+91 9063682021">+91 9063682021</a></p>
+          <!-- <p><a href="tel:+91 9063682021">+91 9063682021</a></p> -->
         </div>
       </div>
-  
+
       <nav class="navbar">
-  
+
         <div class="navbar-brand">
           <img src="./assets/images/logo.png" alt="Educator Logo">
         </div>
-  
+
         <ul class="navbar-nav">
-  
+
           <li class="nav-item">
             <a href="index.html">Home</a>
           </li>
@@ -248,7 +264,7 @@ ul li:hover a span{
                   <img
                     src="https://th.bing.com/th/id/R.ada645eb1de780c7dd118356f6960ae5?rik=VH%2bcLeDxUnuYuw&riu=http%3a%2f%2fabroadeducare.com%2fimages%2fservices%2fCountry-University-Course-Selection.jpg&ehk=hTbFaPZ9t1XeREbgixs4k3Vf%2fFTYDQpLeBTnRpTSDW4%3d&risl=&pid=ImgRaw&r=0"
                     alt="">
-                  <p>Country & Course selection  </p>
+                  <p>Country & Course selection </p>
                 </a>
               </div>
               <div class="meg">
@@ -274,24 +290,24 @@ ul li:hover a span{
           <li class="nav-item">
             <a href="contact.html">Contact Us</a>
           </li>
-  
+
         </ul>
-  
+
         <button class="btn btn-primary">
           <p class="btn-text">
             <a href="#regs"><span style="color: white;">Register Now</span></a>
           </p>
           <span class="square"></span>
         </button>
-  
+
         <button class="nav-toggle-btn">
           <span class="one"></span>
           <span class="two"></span>
           <span class="three"></span>
         </button>
-  
+
       </nav>
-  
+
     </header>
 
     <!-- --------------------submit form------------------------- -->
@@ -366,25 +382,25 @@ ul li:hover a span{
       </form>
     </div>
 
-    
- <!-- --------------------------fixed social media--------------- -->
 
- <div class="fsm">
-  <ul>
-    <li><a href="www.facebook.com"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
-    <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-    <li><a href="#"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
-    <li><a href="#"><i class="fab fa-github"></i><span>Github</span></a></li>
-    <li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
-  </ul>
-</div>
+    <!-- --------------------------fixed social media--------------- -->
+
+    <div class="fsm">
+      <ul>
+        <li><a href="www.facebook.com"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+        <li><a href="#"><i class="fab fa-github"></i><span>Github</span></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
+      </ul>
+    </div>
 
 
 
     <main>
 
-     
+
 
       <!--
         - #HOME SECTION
@@ -440,329 +456,373 @@ ul li:hover a span{
 
           <div class="img-box">
 
-            <img src="./assets/images/banner-img-bg.png" alt="colorful background shape"
-                class="background-shape">
-                <div id="main-img-banner">
-                  <img src="./assets/images/banner-img.png" alt="banner image" class="banner-img" id="banner-img-main">
-                </div>
+            <img src="./assets/images/banner-img-bg.png" alt="colorful background shape" class="background-shape">
+            <div id="main-img-banner">
+              <img src="./assets/images/banner-img.png" alt="banner image" class="banner-img" id="banner-img-main">
+            </div>
             <div id="image-data">
-              <img src="./assets/images/testmo1.png" alt="" class="icon-1 smooth-zigzag-anim-1"
-              width="250" id="testmo">
-              
+              <img src="./assets/images/testmo1.png" alt="" class="icon-1 smooth-zigzag-anim-1" width="250" id="testmo">
+
             </div>
 
             <img src="./assets/images/banner-aliment-icon-1.png" alt="" class="icon-2 smooth-zigzag-anim-2" width="240">
-            <img src="./assets/images/banner-aliment-icon-3.png" alt="" class="icon-3 smooth-zigzag-anim-3"
-                width="195">
+            <img src="./assets/images/banner-aliment-icon-3.png" alt="" class="icon-3 smooth-zigzag-anim-3" width="195">
             <img src="./assets/images/banner-aliment-icon-4.png" alt="" class="icon-4 drop-anim">
 
-        </div>
+          </div>
 
         </div>
 
       </section>
 
 
-  <section class="sec">
-    <h3>
-      International English Language Testing System.
-    </h3>
-    <br>
-    <h3>
-      Administered by:
-    </h3>
-    <P>
-      IELTS is jointly administered by British Council, IDP: IELTS Australia and the University of Cambridge ESOL
-      Examinations (Cambridge ESOL)
-    </P>
-    <br>
-    <h3>
-      Website:
-    </h3>
-    <p>
-      <a href="https://www.britishcouncil.org/">www.britishcouncil.org</a>
-      <a href="https://www.ieltsidpindia.com/">www.ieltsindia.com</a>
-      <a href="https://www.ielts.org/">www.ielts.org</a>
-    </p>
-    <br>
-    <h3>
-      Validity:
-    </h3>
-    <p>
-      The score is valid for 2 years.
-    </p>
-    <br>
-    <h3>
-      Test Format:
-    </h3>
-    <p>
-      Candidates are tested in Listening, Reading, Writing and Speaking. All candidates take the same Listening and
-      Speaking Modules. There is a choice between Academic and General Training in the Reading and Writing Modules.
-      <br><br>
-      2 hours 44 minutes
-      <br><br>
-      The tests are designed to cover the full range of ability from non-user to expert user. Reading and Writing
-      modules must be completed in one day. The Speaking module may be taken, at the discretion of the test centre, in
-      the period seven days before or after the other modules.
-
-    </p>
-
-    <h3>
-      Fees:
-    </h3>
-    <p>
-      Rs 12,650/-
-    </p>
-    <br>
-    <h3>
-      Requirements for Registration:
-    </h3>
-    <p>
-      Photocopy of your Passport (first and last page), Passport size photos with white background
-    </p>
-    <br>
-    <h3>
-      Centres:
-    </h3>
-
-    <ul type="circle">
-      <li>Ahmedabad</li>
-      <li>Amritsar</li>
-      <li>Bangalore</li>
-      <li>Baroda</li>
-      <li>Bhopal</li>
-      <li>Bhubaneshwar</li>
-      <li>Calicut</li>
-      <li>Chandigarh</li>
-      <li>Chennai</li>
-      <li>Coimbatore</li>
-      <li>Dehradun</li>
-      <li>Gurgaon</li>
-      <li>Guwahati</li>
-      <li>Hyderabad</li>
-      <li>Indore</li>
-      <li>Jaipur</li>
-      <li>Jalandhar</li>
-      <li>Jamshedpur</li>
-      <li>Kochi</li>
-      <li>Kolkatta</li>
-      <li>Kottayam</li>
-      <li>Lucknow</li>
-      <li>Ludhiyana</li>
-      <li>Madurai</li>
-      <li>Mangalore</li>
-      <li>Mumbai</li>
-      <li>New Delhi</li>
-      <li>Patiala</li>
-      <li>Patna</li>
-      <li>Pondicherry</li>
-      <li>Pune</li>
-      <li>Raipur</li>
-      <li>Rajkot</li>
-      <li>Rudrapur</li>
-      <li>Siligiri</li>
-      <li>Surat</li>
-      <li>Thimpu</li>
-      <li>Thrissur</li>
-      <li>Trichur</li>
-      <li>Trichy</li>
-      <li>Trivandrum</li>
-      <li>Vadodara</li>
-      <li>Vapi</li>
-      <li>Vijayvada</li>
-      <li>Visakhapatnam</li>
-      <li>Vizag</li>
-    </ul>
-
-
-    <br>
-    <h3>
-      Rescheduling:
-    </h3>
-    <p>
-      If you postpone or cancel your application more than 5 weeks before the test date, you will receive a refund minus
-      an administration charge,
-      <br>
-      If you postpone or cancel within 5 weeks of the test date, you will be charged the full fee unless you have a
-      medical reason. If you provide a medical certificate within 5 days of the test date, you will receive a refund
-      minus the local administrative cost.
-    </p>
-    <br>
-    <h3>
-      Mode:
-    </h3>
-    <p>
-      The IELTS test is a paper-based test.
-    </p>
-    <br>
-    <h3>
-      Number of Tests:
-    </h3>
-    <p>
-      You may take the IELTS test as many times as you like.
-    </p>
-    <br>
-    <h3>
-      Duration:
-    </h3>
-    <p>
-      The test is for 2 hours & 45 minutes excluding the Speaking module. The Speaking module is for 15 minutes; hence
-      the total duration is for 3 hours.
-    </p>
-    <br>
-    <h3>
-      Score:
-    </h3>
-    <p>
-      Total score is out of 9 Bands. Scoring is between 1-9.
-    </p>
-    <br>
-    <h3>
-      Test Reports:
-    </h3>
-    <p>
-      There is an administrative charge of Rs. 200 for an electronic copy of the ATRF. However, if you wish to send the
-      ATRF by courier to international destinations the charges are Rs. 1250 per university / receiving institution.
-    </p>
-    <br>
-    <h3>
-      Countries Accepting IELTS:
-    </h3>
-    <p>
-      Australia, Canada, New Zealand, IRELAND, United Kingdom, United States, Singapore, GERMANY, DENMARK
-    </p>
-
-  </section>
-
-
-  </main>
-
-
-
-
-
-
-  <footer>
-
-    <div class="footer-grid">
-
-      <div class="grid-item">
-
-        <div class="footer-logo">
-          <img src="./assets/images/logo.png" alt="educator logo white">
+      <section class="sec">
+        <h3>
+          International English Language Testing System.
+        </h3>
+        <br>
+        <div class="box">
+          <h3>
+            Administered by:
+          </h3>
+          <hr>
+          <P>
+            IELTS is jointly administered by British Council, IDP: IELTS Australia and the University of Cambridge ESOL
+            Examinations (Cambridge ESOL)
+          </P>
         </div>
-
-        <p class="footer-text">
-          Our range of value-added services include assistance for Education Loan, Financial Aid, Pre-Departure
-          Briefing, Forex, Travel and Accommodation Assistance.
-        </p>
-
-        <div class="social-link">
-          <a href="#">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon name="logo-youtube"></ion-icon>
-          </a>
+        <br>
+        <div class="box">
+          <h3>
+            Website:
+          </h3>
+          <hr>
+          <p>
+            <a href="https://www.britishcouncil.org/">www.britishcouncil.org</a>
+            <a href="https://www.ieltsidpindia.com/">www.ieltsindia.com</a>
+            <a href="https://www.ielts.org/">www.ielts.org</a>
+          </p>
         </div>
+        <br>
+        <div class="box">
+          <h3>
+            Validity:
+          </h3>
+          <hr>
+          <p>
+            The score is valid for 2 years.
+          </p>
+        </div>
+        <br>
+        <div class="box">
+          <h3>
+            Test Format:
+          </h3>
+          <hr>
+          <p>
+            Candidates are tested in Listening, Reading, Writing and Speaking. All candidates take the same Listening
+            and
+            Speaking Modules. There is a choice between Academic and General Training in the Reading and Writing
+            Modules.
+            <br><br>
+            2 hours 44 minutes
+            <br><br>
+            The tests are designed to cover the full range of ability from non-user to expert user. Reading and Writing
+            modules must be completed in one day. The Speaking module may be taken, at the discretion of the test
+            centre,
+            in
+            the period seven days before or after the other modules.
 
-      </div>
-
-      <ul class="grid-item">
-
-        <h4 class="item-heading">Our Link</h4>
-
-        <li class="list-item">
-          <a href="index.html">Home</a>
-        </li>
-
-        <li class="list-item">
-          <a href="index.html">About Us</a>
-        </li>
-
-        <li class="list-item">
-          <a href="index.html">Study Abroad</a>
-        </li>
-
-        <li class="list-item">
-          <a href="index.html">Services</a>
-        </li>
-
-        <li class="list-item">
-          <a href="contact.html">Contact Us</a>
-        </li>
-
-      </ul>
-
-      <ul class="grid-item">
-
-        <h4 class="item-heading">Other Link</h4>
-
-        <li class="list-item">
-          <a href="index.html">Team</a>
-        </li>
-
-        <li class="list-item">
-          <a href="index.html">FAQ</a>
-        </li>
-
-        <li class="list-item">
-          <a href="services.html">Services</a>
-        </li>
-
-        <li class="list-item">
-          <a href="#">Privacy Policy</a>
-        </li>
-
-        <li class="list-item">
-          <a href="#">Term & Condition</a>
-        </li>
-
-      </ul>
-      <div class="grid-item">
-
-        <h4 class="item-heading">Contact Us</h4>
-
-        <div class="wrapper">
-
-          <p class="footer-text">
-            Gurukrupa Complex, Opp. Electrical SubStation, Near Upal Ring Road, Uppal, Hyderabad, Telangana 500039,
-            India
-            Call : +91 9063682021, +91 9550106506
+          </p>
+        </div>
+        <div class="box">
+          <h3>
+            Fees:
+          </h3>
+          <hr>
+          <p>
+            Rs 12,650/-
+          </p>
+        </div>
+        <br>
+        <div class="box">
+          <h3>
+            Requirements for Registration:
+          </h3>
+          <hr>
+          <p>
+            Photocopy of your Passport (first and last page), Passport size photos with white background
+          </p>
+        </div>
+        <br>
+        <div class="box">
+          <h3>
+            Centres:
+          </h3>
+          <hr>
+          <ul type="circle">
+            <li>Ahmedabad</li>
+            <li>Amritsar</li>
+            <li>Bangalore</li>
+            <li>Baroda</li>
+            <li>Bhopal</li>
+            <li>Bhubaneshwar</li>
+            <li>Calicut</li>
+            <li>Chandigarh</li>
+            <li>Chennai</li>
+            <li>Coimbatore</li>
+            <li>Dehradun</li>
+            <li>Gurgaon</li>
+            <li>Guwahati</li>
+            <li>Hyderabad</li>
+            <li>Indore</li>
+            <li>Jaipur</li>
+            <li>Jalandhar</li>
+            <li>Jamshedpur</li>
+            <li>Kochi</li>
+            <li>Kolkatta</li>
+            <li>Kottayam</li>
+            <li>Lucknow</li>
+            <li>Ludhiyana</li>
+            <li>Madurai</li>
+            <li>Mangalore</li>
+            <li>Mumbai</li>
+            <li>New Delhi</li>
+            <li>Patiala</li>
+            <li>Patna</li>
+            <li>Pondicherry</li>
+            <li>Pune</li>
+            <li>Raipur</li>
+            <li>Rajkot</li>
+            <li>Rudrapur</li>
+            <li>Siligiri</li>
+            <li>Surat</li>
+            <li>Thimpu</li>
+            <li>Thrissur</li>
+            <li>Trichur</li>
+            <li>Trichy</li>
+            <li>Trivandrum</li>
+            <li>Vadodara</li>
+            <li>Vapi</li>
+            <li>Vijayvada</li>
+            <li>Visakhapatnam</li>
+            <li>Vizag</li>
+          </ul>
+        </div>
+        <br>
+        <div class="box">
+          <h3>
+            Rescheduling:
+          </h3>
+          <hr>
+          <p>
+            If you postpone or cancel your application more than 5 weeks before the test date, you will receive a refund
+            minus
+            an administration charge,
+            <br>
+            If you postpone or cancel within 5 weeks of the test date, you will be charged the full fee unless you have
+            a
+            medical reason. If you provide a medical certificate within 5 days of the test date, you will receive a
+            refund
+            minus the local administrative cost.
+          </p>
+        </div>
+        <br>
+        <div class="box">
+          <h3>
+            Mode:
+          </h3>
+          <hr>
+          <p>
+            The IELTS test is a paper-based test.
+          </p>
+        </div>
+        <br>
+        <div class="box">
+          <h3>
+            Number of Tests:
+          </h3>
+          <hr>
+          <p>
+            You may take the IELTS test as many times as you like.
+          </p>
+        </div>
+        <br>
+        <div class="box">
+          <h3>
+            Duration:
+          </h3>
+          <hr>
+          <p>
+            The test is for 2 hours & 45 minutes excluding the Speaking module. The Speaking module is for 15 minutes;
+            hence
+            the total duration is for 3 hours.
+          </p>
+        </div>
+        <br>
+        <div class="box">
+          <h3>
+            Score:
+          </h3>
+          <hr>
+          <p>
+            Total score is out of 9 Bands. Scoring is between 1-9.
+          </p>
+        </div>
+        <br>
+        <div class="box">
+          <h3>
+            Test Reports:
+          </h3>
+          <hr>
+          <p>
+            There is an administrative charge of Rs. 200 for an electronic copy of the ATRF. However, if you wish to
+            send
+            the
+            ATRF by courier to international destinations the charges are Rs. 1250 per university / receiving
+            institution.
+          </p>
+        </div>
+        <br>
+        <div class="box">
+          <h3>
+            Countries Accepting IELTS:
+          </h3>
+          <hr>
+          <p>
+            Australia, Canada, New Zealand, IRELAND, United Kingdom, United States, Singapore, GERMANY, DENMARK
           </p>
         </div>
 
+      </section>
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+
+      <div class="footer-grid">
+
+        <div class="grid-item">
+
+          <div class="footer-logo">
+            <img src="./assets/images/logo.png" alt="educator logo white">
+          </div>
+
+          <p class="footer-text">
+            Our range of value-added services include assistance for Education Loan, Financial Aid, Pre-Departure
+            Briefing, Forex, Travel and Accommodation Assistance.
+          </p>
+
+          <div class="social-link">
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </div>
+
+        </div>
+
+        <ul class="grid-item">
+
+          <h4 class="item-heading">Our Link</h4>
+
+          <li class="list-item">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="list-item">
+            <a href="index.html">About Us</a>
+          </li>
+
+          <li class="list-item">
+            <a href="index.html">Study Abroad</a>
+          </li>
+
+          <li class="list-item">
+            <a href="index.html">Services</a>
+          </li>
+
+          <li class="list-item">
+            <a href="contact.html">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="grid-item">
+
+          <h4 class="item-heading">Other Link</h4>
+
+          <li class="list-item">
+            <a href="index.html">Team</a>
+          </li>
+
+          <li class="list-item">
+            <a href="index.html">FAQ</a>
+          </li>
+
+          <li class="list-item">
+            <a href="services.html">Services</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#">Privacy Policy</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#">Term & Condition</a>
+          </li>
+
+        </ul>
+        <div class="grid-item">
+
+          <h4 class="item-heading">Contact Us</h4>
+
+          <div class="wrapper">
+
+            <p class="footer-text">
+              Gurukrupa Complex, Opp. Electrical SubStation, Near Upal Ring Road, Uppal, Hyderabad, Telangana 500039,
+              India
+              Call : +91 9063682021, +91 9550106506
+            </p>
+          </div>
+
+        </div>
+
       </div>
 
-    </div>
+  </div>
 
-    </div>
-
-    <p class="copyright">
-      Copyright © 2022 <a href="#">Overseas Education PVT. LTD</a>. All rights reserved.
-    </p>
+  <p class="copyright">
+    Copyright © 2022 <a href="#">Overseas Education PVT. LTD</a>. All rights reserved.
+  </p>
 
   </footer>
 
-</div>
-<!-- ----------------------------changed testimonials------------------------ -->
-<script>
-var start=1;
-function set_time()
-{
-  // this method will apply time interval for 2.5 second
-  setInterval(image_show,2500);
-}
+  </div>
+  <!-- ----------------------------changed testimonials------------------------ -->
+  <script>
+    var start = 1;
+    function set_time() {
+      // this method will apply time interval for 2.5 second
+      setInterval(image_show, 2500);
+    }
 
-function image_show() 
-{
-  var image_data =  "./assets/images/testmo5.png" ;
+    function image_show() {
+      var image_data = "./assets/images/testmo5.png";
       var img_data = "./assets/images/head7.png";
 
       if (start == 1) {
@@ -804,27 +864,26 @@ function image_show()
       document.getElementById("banner-img-main").src = "" + img_data;
       start++;
 
-}
+    }
 
-</script>
-
-
+  </script>
 
 
-<!--
+
+
+  <!--
   - custom js link
 -->
-<script src="./assets/js/script.js"></script>
-<script src="./location selector/countries.json"></script>
-<script src="./location selector/custom.js"></script>
-<!--
+  <script src="./assets/js/script.js"></script>
+  <script src="./location selector/countries.json"></script>
+  <script src="./location selector/custom.js"></script>
+  <!--
   - ionicon link
 -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<script
-src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 </body>
 

@@ -235,7 +235,8 @@
 
   .navbar { padding: 20px var(--px); }
 
-  .navbar-nav {
+  .navbar-nav
+   {
     background: transparent;
     position: static;
     box-shadow: none;
@@ -247,6 +248,7 @@
     align-items: center;
     gap: 20px;
   }
+
 
   .nav-item:not(:last-child) a { border-bottom: none; }
 

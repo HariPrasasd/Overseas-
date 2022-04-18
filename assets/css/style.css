@@ -59,6 +59,18 @@ header .loc
 .loc .ssic{
   display: flex;
 }
+@media (max-width:700px){
+  .loc .spic,
+  .loc .ssic{
+    position: relative;
+    margin-right: 0;
+  }
+  .loc .ssic p a,
+  .loc .spic p a
+  {
+    font-size: 10px;
+  }
+}
 .loc .spic p
 {
   margin-top: 13px;
@@ -300,7 +312,7 @@ html {
   position: absolute;
   background: black;
   background-size: cover;
-  width: fit-content;
+  /* width: fit-content; */
   left: -250px;
   top: 60px;
   padding: 25px 15px;
@@ -327,6 +339,16 @@ ul li:hover .meg{
   /* background: black; */
   border-radius: 10px;
   justify-content: space-around;
+}
+@media (max-width:1000px){
+  /* ul li#submenu .mega_menu .meg img{
+    display: none;
+  } */
+  ul li#submenu .mega_menu{
+    display: none;
+  }
+
+ 
 }
 
 
